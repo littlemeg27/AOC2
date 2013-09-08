@@ -18,14 +18,16 @@
     self = [super init];
     if(self !=nil)
     {
-
+        [self setBirdDestructionRate:0];
+        [self setBirdToyStrength:0];
+        [self setBirdNoises:nil];
     }
     return self;
 }
 
--(void)findTheNumberOfAnimals; //calculation method to find the number of animals in the shop
+-(int)birdDestruction:(NSString*)birdSounds; //calculation method 
 {
-  //  NSLog(@"How many animals are in the pet shop %i", totalNumberOfAnimals);
+  NSLog(@"");
 }
 
 

@@ -10,7 +10,7 @@
 
 @implementation birdFactory
 
-+(birdBase *)callAnimals:(int)animalType
++(birdBase *)callBirds:(int)birdType
 {
     return [[amazonBird alloc] init];
 }

@@ -14,8 +14,7 @@
 
 @interface birdFactory : NSObject
 
-+(birdBase *)callAnimals:(int)animalType;
-//From old code need to change still some 
++(birdBase *)callBirds:(int)birdType;
 
 
 @end

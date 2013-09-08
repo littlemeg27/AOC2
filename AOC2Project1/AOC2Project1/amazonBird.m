@@ -15,16 +15,17 @@
     self = [super init];
     if(self !=nil)
     {
-  
+        [self setBirdDestructionRate:10];
+        [self setBirdToyStrength:12];
+        [self setBirdNoises:@"Sings or Talks"];
     }
     return self;
 };
 
--(void)findTheNumberOfAnimals; //overriding the base animal totalNumberOfAnimals
+-(int)birdDestruction:(NSString*)birdSounds; //calculation method 
 {
-    [self setTotalNumberOfAnimals:(eclectus + macaw + lovebird + canary + africanGrey + amazon)];
-    NSLog(@"The amount of birds: %@", self);
-}
+    
+};
 
 
 @end
