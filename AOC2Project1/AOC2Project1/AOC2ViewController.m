@@ -28,8 +28,7 @@
     
         if (amazonLabelTitle != nil)
         {
-            [amazonLabelTitle setText:[NSString stringWithFormat:@"Sample",[amazon birdDestructionRate],
-            [amazon birdToyStrength]]];
+            [amazonLabelTitle setText:[NSString stringWithFormat:@"Amazon sounds like %.1d and have the cage destrustion rate of %@ ",[amazon birdDestructionRate],[amazon birdNoises]]];
             [amazonLabelTitle setNumberOfLines:2];
             [[self view] addSubview:amazonLabelTitle];
         }
@@ -52,8 +51,7 @@
         
         if (eclectusLabelTitle != nil)
         {
-            [eclectusLabelTitle setText:[NSString stringWithFormat:@"Sample",[eclectus birdDestructionRate],
-            [eclectus birdToyStrength]]];
+            [eclectusLabelTitle setText:[NSString stringWithFormat:@"Eclectus sounds like %.1d and have the cage destrustion rate of %@ ",[eclectus birdDestructionRate],[eclectus birdNoises]]];
             [eclectusLabelTitle setNumberOfLines:2];
             [[self view] addSubview:eclectusLabelTitle];
         }
@@ -75,8 +73,7 @@
         
         if (greenCheekLabelTitle != nil)
         {
-            [greenCheekLabelTitle setText:[NSString stringWithFormat:@"Sample",[greenCheek birdDestructionRate],
-            [greenCheek birdToyStrength]]];
+            [greenCheekLabelTitle setText:[NSString stringWithFormat:@"Green Cheek sounds like %.1d and have the cage destrustion rate of %@ ",[greenCheek birdDestructionRate],[greenCheek birdNoises]]];
             [greenCheekLabelTitle setNumberOfLines:2];
             [[self view] addSubview:greenCheekLabelTitle];
         }

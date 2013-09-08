@@ -28,7 +28,7 @@
 
 -(int)birdDestruction; //calculation method
 {
-  return [NSString stringWithFormat:@"All the birds %@ different when they are not held",_birdNoises];
+  return [NSString stringWithFormat:@"All the birds %@ different when they are not held", _birdNoises];
 }
 
 
