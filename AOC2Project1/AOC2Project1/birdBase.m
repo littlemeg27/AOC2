@@ -21,6 +21,7 @@
         [self setBirdDestructionRate:0];
         [self setBirdToyStrength:0];
         [self setBirdNoises:nil];
+        [self setHoldBird:nil];
     }
     return self;
 }
@@ -28,7 +29,7 @@
 -(int)birdDestruction:(NSString*)birdSounds; //calculation method 
 {
   NSLog(@"");
-}
+};
 
 
 @end

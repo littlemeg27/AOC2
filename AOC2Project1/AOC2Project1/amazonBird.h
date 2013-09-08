@@ -10,4 +10,7 @@
 
 @interface amazonBird : birdBase
 
+
+@property bool isLoud;
+
 @end

@@ -24,6 +24,7 @@ typedef enum //enum
 @property NSString *birdNoises;
 @property int birdDestructionRate;
 @property int birdToyStrength;
+@property bool holdBird;
 
 
 

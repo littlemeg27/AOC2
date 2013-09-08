@@ -10,4 +10,6 @@
 
 @interface eclectusBird : birdBase
 
+@property bool isSweet;
+
 @end

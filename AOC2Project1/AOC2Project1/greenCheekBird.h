@@ -10,4 +10,6 @@
 
 @interface greenCheekBird : birdBase
 
+@property bool isClown;
+
 @end
