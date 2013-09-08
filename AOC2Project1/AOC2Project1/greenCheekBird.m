@@ -24,22 +24,22 @@
     return self;
 };
 
--(int)birdDestruction:(NSString*)birdSounds; //calculation method
+-(int)birdDestruction; //calculation method
 {
     if ([self isClown] == [self holdBird])
     {
         [self setBirdDestructionRate:[self birdDestructionRate] + 1 - [self birdToyStrength]];
-        return [NSString stringWithFormat:@"The Green Cheek %@ and has a destrustion rate of %f if held", [self birdNoises], [self birdDestructionRate]];
+        return [NSString stringWithFormat:@"The Green Cheek %@ and has a destrustion rate of %d if held", [self birdNoises], [self birdDestructionRate]];
     }
     else if ([self isClown] || ![self holdBird])
     {
         [self setBirdDestructionRate:[self birdDestructionRate] + 2 - [self birdToyStrength]];
-        return [NSString stringWithFormat:@"The Green Cheek %@ and has a destrustion rate of %f if let out of the cage to play", [self birdNoises], [self birdDestructionRate]];
+        return [NSString stringWithFormat:@"The Green Cheek %@ and has a destrustion rate of %d if let out of the cage to play", [self birdNoises], [self birdDestructionRate]];
     }
     else
     {
         [self setBirdDestructionRate:[self birdDestructionRate] + 5 - [self birdToyStrength]];
-        return [NSString stringWithFormat:@"The Green Cheek %@ and has a destrustion rate of %f if not held and left in the cage", [self birdNoises], [self birdDestructionRate]];
+        return [NSString stringWithFormat:@"The Green Cheek %@ and has a destrustion rate of %d if not held and left in the cage", [self birdNoises], [self birdDestructionRate]];
     }
     
 }
