@@ -13,9 +13,9 @@
 //Creates get and set methods
 @synthesize totalNumberOfAnimals, sanctuary;
 
--(id)initialize; //initialize
+-(id)init; //initialize
 {
-    self = [super initialize];
+    self = [super init];
     if(self !=nil)
     {
         [self setTotalNumberOfAnimals:0];

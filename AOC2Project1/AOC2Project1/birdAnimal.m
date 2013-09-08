@@ -12,9 +12,9 @@
 
 @synthesize eclectus, macaw, lovebird, canary, africanGrey, amazon;
 
--(id)initialize
+-(id)init
 {
-    self = [super initialize];
+    self = [super init];
     if(self !=nil)
     {
         [self setEclectus:3];
