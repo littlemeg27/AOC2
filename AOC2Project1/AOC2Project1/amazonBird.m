@@ -1,29 +1,21 @@
 //
-//  birdAnimal.m
+//  amazonBird.m
 //  AOC2Project1
 //
-//  Created by Brenna Pavlinchak on 9/6/13.
+//  Created by Brenna Pavlinchak on 9/7/13.
 //  Copyright (c) 2013 Brenna Pavlinchak. All rights reserved.
 //
 
-#import "birdAnimal.h"
+#import "amazonBird.h"
 
-@implementation birdAnimal
-
-@synthesize eclectus, macaw, lovebird, canary, africanGrey, amazon;
+@implementation amazonBird
 
 -(id)init
 {
     self = [super init];
     if(self !=nil)
     {
-        [self setEclectus:3];
-        [self setMacaw:1];
-        [self setLovebird:5];
-        [self setCanary:5];
-        [self setAfricanGrey:2];
-        [self setAmazon:2];
-        [self setTotalNumberOfAnimals:0];
+  
     }
     return self;
 };
@@ -33,4 +25,6 @@
     [self setTotalNumberOfAnimals:(eclectus + macaw + lovebird + canary + africanGrey + amazon)];
     NSLog(@"The amount of birds: %@", self);
 }
+
+
 @end

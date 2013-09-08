@@ -1,28 +1,30 @@
 //
-//  baseAnimal.h
+//  birdBase.h
 //  AOC2Project1
 //
-//  Created by Brenna Pavlinchak on 9/6/13.
+//  Created by Brenna Pavlinchak on 9/7/13.
 //  Copyright (c) 2013 Brenna Pavlinchak. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface baseAnimal : NSObject
+@interface birdBase : NSObject
 {
-    int animalEnum;
+    int birdEnum;
 }
 
 typedef enum //enum
 {
-   DOG,
-   CAT,
-   BIRD
-}animalEnum;
+    AMAZON,
+    ECLECTUS,
+    GREENCHEEK
+}birdEnum;
 
 //data members
-@property NSString *sanctuary;
-@property int totalNumberOfAnimals;
+@property NSString *birdNoises;
+@property int birdDestructionRate;
+@property int birdToyStrength;
+
 
 
 -(id)init; //initialize

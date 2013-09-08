@@ -24,11 +24,11 @@
 		BA7E504417DAC8760019C3F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7E501C17DAC8760019C3F3 /* Foundation.framework */; };
 		BA7E504C17DAC8760019C3F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA7E504A17DAC8760019C3F3 /* InfoPlist.strings */; };
 		BA7E504F17DAC8760019C3F3 /* AOC2Project1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E504E17DAC8760019C3F3 /* AOC2Project1Tests.m */; };
-		BA7E506017DAC97B0019C3F3 /* animalFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E505F17DAC97B0019C3F3 /* animalFactory.m */; };
-		BA7E506317DAC9F20019C3F3 /* baseAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E506217DAC9F20019C3F3 /* baseAnimal.m */; };
-		BA7E506617DACA340019C3F3 /* birdAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E506517DACA340019C3F3 /* birdAnimal.m */; };
-		BA7E506F17DACA940019C3F3 /* dogAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E506E17DACA940019C3F3 /* dogAnimal.m */; };
-		BA7E507217DAD28C0019C3F3 /* catAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E507117DAD28C0019C3F3 /* catAnimal.m */; };
+		BA7E507517DC2B930019C3F3 /* birdFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E507417DC2B930019C3F3 /* birdFactory.m */; };
+		BA7E507817DC2BAB0019C3F3 /* birdBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E507717DC2BAB0019C3F3 /* birdBase.m */; };
+		BA7E507B17DC2BCD0019C3F3 /* amazonBird.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E507A17DC2BCD0019C3F3 /* amazonBird.m */; };
+		BA7E507E17DC2BF60019C3F3 /* eclectusBird.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E507D17DC2BF60019C3F3 /* eclectusBird.m */; };
+		BA7E508117DC2CE50019C3F3 /* greenCheekBird.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E508017DC2CE50019C3F3 /* greenCheekBird.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,16 +65,16 @@
 		BA7E504B17DAC8760019C3F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA7E504D17DAC8760019C3F3 /* AOC2Project1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2Project1Tests.h; sourceTree = "<group>"; };
 		BA7E504E17DAC8760019C3F3 /* AOC2Project1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2Project1Tests.m; sourceTree = "<group>"; };
-		BA7E505E17DAC97B0019C3F3 /* animalFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animalFactory.h; sourceTree = "<group>"; };
-		BA7E505F17DAC97B0019C3F3 /* animalFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animalFactory.m; sourceTree = "<group>"; };
-		BA7E506117DAC9F20019C3F3 /* baseAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseAnimal.h; sourceTree = "<group>"; };
-		BA7E506217DAC9F20019C3F3 /* baseAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseAnimal.m; sourceTree = "<group>"; };
-		BA7E506417DACA340019C3F3 /* birdAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = birdAnimal.h; sourceTree = "<group>"; };
-		BA7E506517DACA340019C3F3 /* birdAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = birdAnimal.m; sourceTree = "<group>"; };
-		BA7E506D17DACA940019C3F3 /* dogAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dogAnimal.h; sourceTree = "<group>"; };
-		BA7E506E17DACA940019C3F3 /* dogAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dogAnimal.m; sourceTree = "<group>"; };
-		BA7E507017DAD28C0019C3F3 /* catAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catAnimal.h; sourceTree = "<group>"; };
-		BA7E507117DAD28C0019C3F3 /* catAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catAnimal.m; sourceTree = "<group>"; };
+		BA7E507317DC2B920019C3F3 /* birdFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = birdFactory.h; sourceTree = "<group>"; };
+		BA7E507417DC2B930019C3F3 /* birdFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = birdFactory.m; sourceTree = "<group>"; };
+		BA7E507617DC2BAB0019C3F3 /* birdBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = birdBase.h; sourceTree = "<group>"; };
+		BA7E507717DC2BAB0019C3F3 /* birdBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = birdBase.m; sourceTree = "<group>"; };
+		BA7E507917DC2BCD0019C3F3 /* amazonBird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amazonBird.h; sourceTree = "<group>"; };
+		BA7E507A17DC2BCD0019C3F3 /* amazonBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amazonBird.m; sourceTree = "<group>"; };
+		BA7E507C17DC2BF60019C3F3 /* eclectusBird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eclectusBird.h; sourceTree = "<group>"; };
+		BA7E507D17DC2BF60019C3F3 /* eclectusBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eclectusBird.m; sourceTree = "<group>"; };
+		BA7E507F17DC2CE50019C3F3 /* greenCheekBird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = greenCheekBird.h; sourceTree = "<group>"; };
+		BA7E508017DC2CE50019C3F3 /* greenCheekBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = greenCheekBird.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,16 +141,16 @@
 				BA7E503517DAC8760019C3F3 /* AOC2ViewController_iPhone.xib */,
 				BA7E503817DAC8760019C3F3 /* AOC2ViewController_iPad.xib */,
 				BA7E502117DAC8760019C3F3 /* Supporting Files */,
-				BA7E505E17DAC97B0019C3F3 /* animalFactory.h */,
-				BA7E505F17DAC97B0019C3F3 /* animalFactory.m */,
-				BA7E506117DAC9F20019C3F3 /* baseAnimal.h */,
-				BA7E506217DAC9F20019C3F3 /* baseAnimal.m */,
-				BA7E506417DACA340019C3F3 /* birdAnimal.h */,
-				BA7E506517DACA340019C3F3 /* birdAnimal.m */,
-				BA7E506D17DACA940019C3F3 /* dogAnimal.h */,
-				BA7E506E17DACA940019C3F3 /* dogAnimal.m */,
-				BA7E507017DAD28C0019C3F3 /* catAnimal.h */,
-				BA7E507117DAD28C0019C3F3 /* catAnimal.m */,
+				BA7E507317DC2B920019C3F3 /* birdFactory.h */,
+				BA7E507417DC2B930019C3F3 /* birdFactory.m */,
+				BA7E507617DC2BAB0019C3F3 /* birdBase.h */,
+				BA7E507717DC2BAB0019C3F3 /* birdBase.m */,
+				BA7E507917DC2BCD0019C3F3 /* amazonBird.h */,
+				BA7E507A17DC2BCD0019C3F3 /* amazonBird.m */,
+				BA7E507C17DC2BF60019C3F3 /* eclectusBird.h */,
+				BA7E507D17DC2BF60019C3F3 /* eclectusBird.m */,
+				BA7E507F17DC2CE50019C3F3 /* greenCheekBird.h */,
+				BA7E508017DC2CE50019C3F3 /* greenCheekBird.m */,
 			);
 			path = AOC2Project1;
 			sourceTree = "<group>";
@@ -303,11 +303,11 @@
 				BA7E502717DAC8760019C3F3 /* main.m in Sources */,
 				BA7E502B17DAC8760019C3F3 /* AOC2AppDelegate.m in Sources */,
 				BA7E503417DAC8760019C3F3 /* AOC2ViewController.m in Sources */,
-				BA7E506017DAC97B0019C3F3 /* animalFactory.m in Sources */,
-				BA7E506317DAC9F20019C3F3 /* baseAnimal.m in Sources */,
-				BA7E506617DACA340019C3F3 /* birdAnimal.m in Sources */,
-				BA7E506F17DACA940019C3F3 /* dogAnimal.m in Sources */,
-				BA7E507217DAD28C0019C3F3 /* catAnimal.m in Sources */,
+				BA7E507517DC2B930019C3F3 /* birdFactory.m in Sources */,
+				BA7E507817DC2BAB0019C3F3 /* birdBase.m in Sources */,
+				BA7E507B17DC2BCD0019C3F3 /* amazonBird.m in Sources */,
+				BA7E507E17DC2BF60019C3F3 /* eclectusBird.m in Sources */,
+				BA7E508117DC2CE50019C3F3 /* greenCheekBird.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
