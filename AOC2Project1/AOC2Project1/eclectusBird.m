@@ -15,7 +15,7 @@
     self = [super init];
     if(self !=nil)
     {
-        [self setBirdDestructionRate:8];
+        [self setBirdDestructionRate:12];
         [self setBirdToyStrength:12];
         [self setBirdNoises:@"Talks or cartoon like sounds"];
         [self setHoldBird:TRUE];
@@ -24,7 +24,7 @@
     return self;
 };
 
--(int)birdDestruction; //calculation method
+-(NSString *)birdDestruction:(NSString*)birdSounds; //calculation method
 {
     if ([self isSweet] == [self holdBird])
     {

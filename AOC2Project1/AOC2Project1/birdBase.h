@@ -30,7 +30,7 @@ typedef enum //enum
 
 -(id)init; //initialize
 
--(int)birdDestruction:(NSString*)birdSounds; //calculation method to find the number of animals in the shop
+-(NSString *)birdDestruction:(NSString*)birdSounds; //calculation method to find the number of animals in the shop
 
 
 @end

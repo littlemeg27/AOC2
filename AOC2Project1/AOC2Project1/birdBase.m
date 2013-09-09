@@ -26,7 +26,7 @@
     return self;
 }
 
--(int)birdDestruction; //calculation method
+-(NSString *)birdDestruction:(NSString*)birdSounds //calculation method
 {
   return [NSString stringWithFormat:@"All the birds %@ different when they are not held", _birdNoises];
 }

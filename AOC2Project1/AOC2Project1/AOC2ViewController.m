@@ -24,17 +24,17 @@
     if (amazon != nil)
     {
         [amazon setRateOfDestruction:20];
-        UILabel *amazonLabelTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 5.0f, 350.0f, 70.0f)];
+        UILabel *amazonLabelTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 5.0f, 360.0f, 70.0f)];
     
         if (amazonLabelTitle != nil)
         {
-            [amazonLabelTitle setText:[NSString stringWithFormat:@"Amazon sound like %@ and have the cage destrustion rate of %.1d",[amazon birdNoises],[amazon birdDestructionRate]]];
+            [amazonLabelTitle setText:[NSString stringWithFormat:@"Amazon's %@ and have the cage destrustion rate of %.1d",[amazon birdNoises],[amazon birdDestructionRate]]];
             [amazonLabelTitle setNumberOfLines:5];
             amazonLabelTitle.backgroundColor = [UIColor lightGrayColor];
             [[self view] addSubview:amazonLabelTitle];
         }
     
-        UILabel *amazonLabel = [[UILabel alloc] initWithFrame:CGRectMake(360.0f, 5.0f, 350.0f, 70.0f)];
+        UILabel *amazonLabel = [[UILabel alloc] initWithFrame:CGRectMake(370.0f, 5.0f, 360.0f, 70.0f)];
         if (amazonLabel != nil)
         {
 
@@ -49,17 +49,17 @@
     if (eclectus != nil)
     {
         [eclectus setRateOfDestruction:20];
-        UILabel *eclectusLabelTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 80.0f, 350.0f, 70.0f)];
+        UILabel *eclectusLabelTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 80.0f, 360.0f, 70.0f)];
         
         if (eclectusLabelTitle != nil)
         {
-            [eclectusLabelTitle setText:[NSString stringWithFormat:@"Eclectus sounds like %@ and have the cage destrustion rate of %.1d",[eclectus birdNoises],[eclectus birdDestructionRate]]];
+            [eclectusLabelTitle setText:[NSString stringWithFormat:@"Eclectus %@ and have the cage destrustion rate of %.1d",[eclectus birdNoises],[eclectus birdDestructionRate]]];
             eclectusLabelTitle.backgroundColor = [UIColor lightGrayColor];
             [eclectusLabelTitle setNumberOfLines:5];
             [[self view] addSubview:eclectusLabelTitle];
         }
         
-        UILabel *eclectusLabel = [[UILabel alloc] initWithFrame:CGRectMake(360.0f, 80.0f, 350.0f, 70.0f)];
+        UILabel *eclectusLabel = [[UILabel alloc] initWithFrame:CGRectMake(370.0f, 80.0f, 360.0f, 70.0f)];
         if (eclectusLabel != nil)
         {
             [eclectusLabel setNumberOfLines:5];
@@ -73,17 +73,17 @@
     if (greenCheek != nil)
     {
         [greenCheek setRateOfDestruction:20];
-        UILabel *greenCheekLabelTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 155.0f, 350.0f, 70.0f)];
+        UILabel *greenCheekLabelTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 155.0f, 360.0f, 70.0f)];
         
         if (greenCheekLabelTitle != nil)
         {
-            [greenCheekLabelTitle setText:[NSString stringWithFormat:@"Green Cheek sounds like %@ and have the cage destrustion rate of %.1d",[greenCheek birdNoises],[greenCheek birdDestructionRate]]];
+            [greenCheekLabelTitle setText:[NSString stringWithFormat:@"Green Cheek makes sound like %@ and have the cage destrustion rate of %.1d",[greenCheek birdNoises],[greenCheek birdDestructionRate]]];
             greenCheekLabelTitle.backgroundColor = [UIColor lightGrayColor];
             [greenCheekLabelTitle setNumberOfLines:5];
             [[self view] addSubview:greenCheekLabelTitle];
         }
         
-        UILabel *greenCheekLabel = [[UILabel alloc] initWithFrame:CGRectMake(360.0f, 155.0f, 350.0f, 70.0f)];
+        UILabel *greenCheekLabel = [[UILabel alloc] initWithFrame:CGRectMake(370.0f, 155.0f, 360.0f, 70.0f)];
         if (greenCheekLabel != nil)
         {
             [greenCheekLabel setNumberOfLines:5];
