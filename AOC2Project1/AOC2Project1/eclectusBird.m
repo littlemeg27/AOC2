@@ -17,7 +17,7 @@
     {
         [self setBirdDestructionRate:12];
         [self setBirdToyStrength:12];
-        [self setBirdNoises:@"Talks or cartoon like sounds"];
+        [self setBirdNoises:@"Talks or makes cartoon like sounds"];
         [self setHoldBird:TRUE];
         [self setIsSweet:TRUE];
     }
