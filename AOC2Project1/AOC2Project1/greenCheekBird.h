@@ -11,5 +11,6 @@
 @interface greenCheekBird : birdBase
 
 @property bool isClown;
+@property int rateOfDestruction;
 
 @end

@@ -11,5 +11,6 @@
 @interface eclectusBird : birdBase
 
 @property bool isSweet;
+@property int rateOfDestruction;
 
 @end

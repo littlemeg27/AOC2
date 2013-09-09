@@ -12,5 +12,6 @@
 
 
 @property bool isLoud;
+@property int rateOfDestruction;
 
 @end
