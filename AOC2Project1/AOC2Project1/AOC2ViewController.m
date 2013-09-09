@@ -28,7 +28,7 @@
     
         if (amazonLabelTitle != nil)
         {
-            [amazonLabelTitle setText:[NSString stringWithFormat:@"Amazon's %@ and has the cage destrustion rate of %.1d",[amazon birdNoises],[amazon birdDestructionRate]]];
+            [amazonLabelTitle setText:[NSString stringWithFormat:@"Amazon's %@ and has the cage destruction rate of %.1d",[amazon birdNoises],[amazon birdDestructionRate]]];
             [amazonLabelTitle setNumberOfLines:5];
             amazonLabelTitle.backgroundColor = [UIColor lightGrayColor];
             [[self view] addSubview:amazonLabelTitle];
@@ -53,7 +53,7 @@
         
         if (eclectusLabelTitle != nil)
         {
-            [eclectusLabelTitle setText:[NSString stringWithFormat:@"Eclectus %@ and has the cage destrustion rate of %.1d",[eclectus birdNoises],[eclectus birdDestructionRate]]];
+            [eclectusLabelTitle setText:[NSString stringWithFormat:@"Eclectus %@ and has the cage destruction rate of %.1d",[eclectus birdNoises],[eclectus birdDestructionRate]]];
             eclectusLabelTitle.backgroundColor = [UIColor lightGrayColor];
             [eclectusLabelTitle setNumberOfLines:5];
             [[self view] addSubview:eclectusLabelTitle];
@@ -77,7 +77,7 @@
         
         if (greenCheekLabelTitle != nil)
         {
-            [greenCheekLabelTitle setText:[NSString stringWithFormat:@"Green Cheek makes sound like %@ and has the cage destrustion rate of %.1d",[greenCheek birdNoises],[greenCheek birdDestructionRate]]];
+            [greenCheekLabelTitle setText:[NSString stringWithFormat:@"Green Cheek makes sound like %@ and has the cage destruction rate of %.1d",[greenCheek birdNoises],[greenCheek birdDestructionRate]]];
             greenCheekLabelTitle.backgroundColor = [UIColor lightGrayColor];
             [greenCheekLabelTitle setNumberOfLines:5];
             [[self view] addSubview:greenCheekLabelTitle];
