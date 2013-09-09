@@ -85,7 +85,8 @@
             [[self view]addSubview:greenCheekLabel];
         }
     }
-
+    
+    [super viewDidLoad];
 
 }
 
