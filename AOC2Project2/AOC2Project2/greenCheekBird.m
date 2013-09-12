@@ -41,7 +41,7 @@
         [self setBirdDestructionRate:[self birdDestructionRate] + 5 - [self birdToyStrength]];
         return [NSString stringWithFormat:@"The Green Cheek %@ and has a destruction rate of %d if not held and left in the cage", [self birdNoises], [self birdDestructionRate]];
     }
-    
+    NSLog(@"The birdDestructionRate is %d", birdDestructionRate);
 }
 
 @end
