@@ -10,6 +10,8 @@
 
 @implementation amazonBird
 
+@synthesize buttonInAmazon;
+
 -(id)init
 {
     self = [super init];
@@ -44,5 +46,49 @@
     
 }
 
+-(IBAction)onClick:(id)sender
+{
+    UIButton *buttonInAmazon = (UIButton*)sender;
+    
+    if(buttonInAmazon !=nil)
+    {
+        if(buttonInAmazon.tag == 0)
+        {
+            NSLog(@"You pressed button 0");
+        }
+        else if(buttonInAmazon.tag == 1)
+        {
+            NSLog(@"You pressed button 1");
+        }
+    }
+}
+
+/*- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+        toggleButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [toggleButton setTitle:@"" forState:UIControlStateNormal];
+        toggleButton.userInteractionEnabled=YES;
+        
+        // add drag listener
+        [toggleButton addTarget:self action:@selector(wasDragged:withEvent:)
+               forControlEvents:UIControlEventTouchDragInside];
+        
+        // center and size
+        toggleButton.frame = CGRectMake(frame.origin.x, frame.origin.y, width, frame.size.height);
+        
+        toggleButton.backgroundColor=[UIColor colorWithRed:0.1 green:0.1 blue:0.0 alpha:0.1];
+        [toggleButton.layer setBorderWidth:4.0];
+        [toggleButton.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
+        toggleButton.layer.cornerRadius=4.0;
+        [toggleButton setTitleColor:[UIColor colorWithRed:0.3 green:0.1 blue:0.4 alpha:1.0] forState:UIControlStateNormal];
+        
+        // add it, centered
+        [self addSubview:toggleButton];
+    }
+    return self;
+}*/
 
 @end

@@ -12,5 +12,5 @@
 
 
 @property bool isLoud;
-
+@property (nonatomic, strong) UIButton *buttonInAmazon;
 @end

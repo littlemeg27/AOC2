@@ -11,4 +11,6 @@
 
 @interface AOC2ViewController : UIViewController
 
+-(IBAction)onClick:(id)sender;
+
 @end

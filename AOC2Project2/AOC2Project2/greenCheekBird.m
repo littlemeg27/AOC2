@@ -28,7 +28,8 @@
 {
     if ([self isClown] == [self holdBird])
     {
-        [self setBirdDestructionRate:[self birdDestructionRate] + 1 - [self birdToyStrength]];
+        [self setBirdDestructionRate:[self birdDestructionRate] + [self birdToyStrength] - 5];
+        NSLog(@"The birdDestructionRate is %d", [self birdDestructionRate]);
         return [NSString stringWithFormat:@"The Green Cheek %@ and has a destruction rate of %d if held", [self birdNoises], [self birdDestructionRate]];
     }
     else if ([self isClown] || ![self holdBird])
@@ -38,10 +39,14 @@
     }
     else
     {
-        [self setBirdDestructionRate:[self birdDestructionRate] + 5 - [self birdToyStrength]];
+        [self setBirdDestructionRate:[self birdDestructionRate] + 1 - [self birdToyStrength]];
         return [NSString stringWithFormat:@"The Green Cheek %@ and has a destruction rate of %d if not held and left in the cage", [self birdNoises], [self birdDestructionRate]];
     }
-    NSLog(@"The birdDestructionRate is %d", birdDestructionRate);
+}
+
+-(IBAction)onClick:(id)sender
+{
+    
 }
 
 @end
