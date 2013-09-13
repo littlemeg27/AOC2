@@ -32,6 +32,4 @@ typedef enum //enum
 
 -(NSString*)birdDestruction:(NSString*)birdSounds; //calculation method to find the number of animals in the shop
 
--(IBAction)onClick:(id)sender;
-
 @end

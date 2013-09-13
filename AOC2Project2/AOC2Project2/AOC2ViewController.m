@@ -32,7 +32,7 @@
             [amazonLabelTitle setText: textForAmazonLabel];
             [amazonLabelTitle setNumberOfLines:5];
             amazonLabelTitle.backgroundColor = [UIColor lightGrayColor];
-            [[self view] addSubview:amazonLabelTitle];
+            //[[self view] addSubview:amazonLabelTitle];
         }
         
         UILabel *amazonLabel = [[UILabel alloc] initWithFrame:CGRectMake(380.0f, 5.0f, 370.0f, 80.0f)];
@@ -41,7 +41,7 @@
             
             [amazonLabel setNumberOfLines:5];
             amazonLabel.backgroundColor = [UIColor lightGrayColor];
-            [[self view]addSubview:amazonLabel];
+            //[[self view]addSubview:amazonLabel];
         }
     }
     
@@ -58,7 +58,7 @@
             [eclectusLabelTitle setText: textForEclectusLabel];
             eclectusLabelTitle.backgroundColor = [UIColor lightGrayColor];
             [eclectusLabelTitle setNumberOfLines:5];
-            [[self view] addSubview:eclectusLabelTitle];
+            //[[self view] addSubview:eclectusLabelTitle];
         }
         
         UILabel *eclectusLabel = [[UILabel alloc] initWithFrame:CGRectMake(380.0f, 90.0f, 370.0f, 80.0f)];
@@ -66,7 +66,7 @@
         {
             [eclectusLabel setNumberOfLines:5];
             eclectusLabel.backgroundColor = [UIColor lightGrayColor];
-            [[self view]addSubview:eclectusLabel];
+            //[[self view]addSubview:eclectusLabel];
         }
     }
     
@@ -83,7 +83,7 @@
             [greenCheekLabelTitle setText: textForGreenCheekLabel];
             greenCheekLabelTitle.backgroundColor = [UIColor lightGrayColor];
             [greenCheekLabelTitle setNumberOfLines:5];
-            [[self view] addSubview:greenCheekLabelTitle];
+            //[[self view] addSubview:greenCheekLabelTitle];
         }
         
         UILabel *greenCheekLabel = [[UILabel alloc] initWithFrame:CGRectMake(380.0f, 175.0f, 370.0f, 80.0f)];
@@ -91,12 +91,29 @@
         {
             [greenCheekLabel setNumberOfLines:5];
             greenCheekLabel.backgroundColor = [UIColor lightGrayColor];
-            [[self view]addSubview:greenCheekLabel];
+            //[[self view]addSubview:greenCheekLabel];
         }
     }
     
     [super viewDidLoad];
     
+}
+
+-(IBAction)onClick:(id)sender
+{
+    UIButton *buttonInAmazon = (UIButton*)sender;
+    
+    if(buttonInAmazon !=nil)
+    {
+        if(buttonInAmazon.tag == 0)
+        {
+            NSLog(@"You pressed button 0");
+        }
+        else if(buttonInAmazon.tag == 1)
+        {
+            NSLog(@"You pressed button 1");
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning

@@ -29,6 +29,7 @@
 		BA06114B17E136170085F5E1 /* amazonBird.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06114A17E136170085F5E1 /* amazonBird.m */; };
 		BA06114E17E13A4B0085F5E1 /* eclectusBird.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06114D17E13A4B0085F5E1 /* eclectusBird.m */; };
 		BA06115117E13A6A0085F5E1 /* greenCheekBird.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06115017E13A6A0085F5E1 /* greenCheekBird.m */; };
+		BABCDA4217E2A92200EA3B51 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABCDA4117E2A92200EA3B51 /* SecondView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		BA06114D17E13A4B0085F5E1 /* eclectusBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eclectusBird.m; sourceTree = "<group>"; };
 		BA06114F17E13A6A0085F5E1 /* greenCheekBird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = greenCheekBird.h; sourceTree = "<group>"; };
 		BA06115017E13A6A0085F5E1 /* greenCheekBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = greenCheekBird.m; sourceTree = "<group>"; };
+		BABCDA4117E2A92200EA3B51 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				BA06114D17E13A4B0085F5E1 /* eclectusBird.m */,
 				BA06114F17E13A6A0085F5E1 /* greenCheekBird.h */,
 				BA06115017E13A6A0085F5E1 /* greenCheekBird.m */,
+				BABCDA4117E2A92200EA3B51 /* SecondView.xib */,
 			);
 			path = AOC2Project2;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				BA06111C17E135A50085F5E1 /* Default-568h@2x.png in Resources */,
 				BA06112217E135A50085F5E1 /* AOC2ViewController_iPhone.xib in Resources */,
 				BA06112517E135A50085F5E1 /* AOC2ViewController_iPad.xib in Resources */,
+				BABCDA4217E2A92200EA3B51 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +502,7 @@
 				BA06113F17E135A60085F5E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA06114017E135A60085F5E1 /* Build configuration list for PBXNativeTarget "AOC2Project2Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				BA06114217E135A60085F5E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
