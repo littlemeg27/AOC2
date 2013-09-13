@@ -30,23 +30,24 @@
 {
     if ([self isLoud] == [self holdBird])
     {
-        [self setBirdDestructionRate:[self birdDestructionRate] + 1 - [self birdToyStrength]];
+        
+        [self setBirdDestructionRate:[self birdDestructionRate] - [self birdToyStrength] + 2];
         return [NSString stringWithFormat:@"The Amazon %@ and has a destrustion rate of %d if held", [self birdNoises], [self birdDestructionRate]];
     }
     else if ([self isLoud] || ![self holdBird])
     {
-        [self setBirdDestructionRate:[self birdDestructionRate] + 2 - [self birdToyStrength]];
+        [self setBirdDestructionRate:[self birdDestructionRate] - [self birdToyStrength] + 3];
         return [NSString stringWithFormat:@"The Amazon %@ and has a destrustion rate of %d if let out of the cage to play", [self birdNoises], [self birdDestructionRate]];
     }
     else
     {
-        [self setBirdDestructionRate:[self birdDestructionRate] + 5 - [self birdToyStrength]];
+        [self setBirdDestructionRate:[self birdDestructionRate] - [self birdToyStrength] + 5];
         return [NSString stringWithFormat:@"The Amazon %@ and has a destrustion rate of %d if not held and left in the cage", [self birdNoises], [self birdDestructionRate]];
     }
     
 }
 
--(IBAction)onClick:(id)sender
+/*-(IBAction)onClick:(id)sender
 {
     UIButton *buttonInAmazon = (UIButton*)sender;
     
@@ -61,7 +62,7 @@
             NSLog(@"You pressed button 1");
         }
     }
-}
+}*/
 
 /*- (id)initWithFrame:(CGRect)frame
 {

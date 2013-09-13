@@ -28,17 +28,19 @@
 {
     if ([self isSweet] == [self holdBird])
     {
-        [self setBirdDestructionRate:[self birdDestructionRate] + 1 - [self birdToyStrength]];
+        NSLog(@"The eclectus birdDestructionRate is %d", [self birdDestructionRate]);
+        NSLog(@"The eclectus birdToyStrength is %d", [self birdToyStrength]);
+        [self setBirdDestructionRate:[self birdDestructionRate] - [self birdToyStrength] + 2];
         return [NSString stringWithFormat:@"The Eclectus %@ and has a destrustion rate of %d if held", [self birdNoises], [self birdDestructionRate]];
     }
     else if ([self isSweet] || ![self holdBird])
     {
-        [self setBirdDestructionRate:[self birdDestructionRate] + 2 - [self birdToyStrength]];
+        [self setBirdDestructionRate:[self birdDestructionRate] - [self birdToyStrength] + 3];
         return [NSString stringWithFormat:@"The Eclectus %@ and has a destrustion rate of %d if let out of the cage to play", [self birdNoises], [self birdDestructionRate]];
     }
     else
     {
-        [self setBirdDestructionRate:[self birdDestructionRate] + 5 - [self birdToyStrength]];
+        [self setBirdDestructionRate:[self birdDestructionRate] - [self birdToyStrength] + 5];
         return [NSString stringWithFormat:@"The Eclectus %@ and has a destrustion rate of %d if not held and left in the cage", [self birdNoises], [self birdDestructionRate]];
     }
     
