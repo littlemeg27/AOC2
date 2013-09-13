@@ -13,8 +13,11 @@
 {
     IBOutlet UIButton *pressButtonOne;
     IBOutlet UIButton *pressButtonTwo;
+    IBOutlet UIButton *pressButtonThree;
+    IBOutlet UIButton *stepperButton;
 }
 
 -(IBAction)onClick:(id)sender;
+-(IBAction)onTapChange:(id)sender;
 
 @end

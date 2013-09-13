@@ -102,22 +102,48 @@
 
 -(IBAction)onClick:(id)sender
 {
-    UIButton *buttonInAmazon = (UIButton*)sender;
+    UIButton *classButtons = (UIButton*)sender;
     
-    if(buttonInAmazon !=nil)
+    if(classButtons !=nil)
     {
-        if(buttonInAmazon.tag == 0)
+        if(classButtons.tag == 0)
         {
             pressButtonOne.enabled = FALSE;
+            pressButtonTwo.enabled = TRUE;
+            pressButtonThree.enabled = TRUE;
             NSLog(@"You pressed button 0");
         }
-        else if(buttonInAmazon.tag == 1)
+        else if(classButtons.tag == 1)
         {
+            pressButtonTwo.enabled = FALSE;
             pressButtonOne.enabled = TRUE;
+            pressButtonThree.enabled = TRUE;
             NSLog(@"You pressed button 1");
         }
+        else if(classButtons.tag == 2)
+        {
+            pressButtonThree.enabled = FALSE;
+            pressButtonOne.enabled = TRUE;
+            pressButtonTwo.enabled = TRUE;
+            NSLog(@"You pressed button 2");
+        }
+
     }
 }
+
+-(IBAction)onTapChange:(id)sender
+{
+    UIStepper *stepperButton = (UIStepper*)sender;
+    
+    if(stepperButton.tag == 0)
+    {
+        int currentStepperValue = stepperButton.value;
+        NSLog(@"Stepper Value: %d", currentStepperValue);
+        stepperlabel.text = [NSString stringWithFormat:@"%@",stepperButton];
+        
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
