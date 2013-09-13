@@ -10,6 +10,10 @@
 #import "birdFactory.h"
 
 @interface AOC2ViewController : UIViewController
+{
+    IBOutlet UIButton *pressButtonOne;
+    IBOutlet UIButton *pressButtonTwo;
+}
 
 -(IBAction)onClick:(id)sender;
 

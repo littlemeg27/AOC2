@@ -19,6 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    //Keeping all of this till I know i dont need it
     amazonBird *amazon = (amazonBird*)[birdFactory callBirds:AMAZON];
     
     if (amazon != nil)
@@ -107,10 +108,12 @@
     {
         if(buttonInAmazon.tag == 0)
         {
+            pressButtonOne.enabled = FALSE;
             NSLog(@"You pressed button 0");
         }
         else if(buttonInAmazon.tag == 1)
         {
+            pressButtonOne.enabled = TRUE;
             NSLog(@"You pressed button 1");
         }
     }
