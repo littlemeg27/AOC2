@@ -30,6 +30,7 @@
 		BA06114E17E13A4B0085F5E1 /* eclectusBird.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06114D17E13A4B0085F5E1 /* eclectusBird.m */; };
 		BA06115117E13A6A0085F5E1 /* greenCheekBird.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06115017E13A6A0085F5E1 /* greenCheekBird.m */; };
 		BABCDA4217E2A92200EA3B51 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABCDA4117E2A92200EA3B51 /* SecondView.xib */; };
+		BABCDA4517E3F80F00EA3B51 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = BABCDA4417E3F80F00EA3B51 /* SecondView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		BA06114F17E13A6A0085F5E1 /* greenCheekBird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = greenCheekBird.h; sourceTree = "<group>"; };
 		BA06115017E13A6A0085F5E1 /* greenCheekBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = greenCheekBird.m; sourceTree = "<group>"; };
 		BABCDA4117E2A92200EA3B51 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		BABCDA4317E3F80F00EA3B51 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
+		BABCDA4417E3F80F00EA3B51 /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				BA06114F17E13A6A0085F5E1 /* greenCheekBird.h */,
 				BA06115017E13A6A0085F5E1 /* greenCheekBird.m */,
 				BABCDA4117E2A92200EA3B51 /* SecondView.xib */,
+				BABCDA4317E3F80F00EA3B51 /* SecondView.h */,
+				BABCDA4417E3F80F00EA3B51 /* SecondView.m */,
 			);
 			path = AOC2Project2;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				BA06114B17E136170085F5E1 /* amazonBird.m in Sources */,
 				BA06114E17E13A4B0085F5E1 /* eclectusBird.m in Sources */,
 				BA06115117E13A6A0085F5E1 /* greenCheekBird.m in Sources */,
+				BABCDA4517E3F80F00EA3B51 /* SecondView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

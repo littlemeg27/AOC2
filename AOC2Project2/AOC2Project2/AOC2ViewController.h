@@ -16,11 +16,12 @@
     IBOutlet UIButton *pressButtonThree;
     IBOutlet UIButton *stepperButton;
     IBOutlet UILabel *stepperLabel;
-    IBOutlet UITextField *birdValueLabel;
+    IBOutlet UITextField *birdValueTextbox;
 }
 
 -(IBAction)onClick:(id)sender;
 -(IBAction)onStepperChange:(id)sender;
 -(IBAction)onClickValue:(id)sender;
-
+-(IBAction)colorChanger:(id)sender;
+-(IBAction)onClickChangeView:(id)sender;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AOC2ViewController.h"
+#import "SecondView.h"
 
 @interface AOC2ViewController ()
 
@@ -26,6 +27,31 @@ int newRate;
     
 }
 
+-(IBAction)colorChanger:(id)sender
+{
+    UISegmentedControl *colorChanger = (UISegmentedControl*)sender;
+    if (colorChanger != nil)
+    {
+        if (colorChanger.selectedSegmentIndex == 0)
+        {
+            self.view.backgroundColor = [UIColor redColor];
+        }
+        else if (colorChanger.selectedSegmentIndex == 1)
+        {
+            self.view.backgroundColor = [UIColor darkGrayColor];
+        }
+        else if (colorChanger.selectedSegmentIndex == 2)
+        {
+            self.view.backgroundColor = [UIColor purpleColor];
+        }
+        else if (colorChanger.selectedSegmentIndex == 3)
+        {
+            self.view.backgroundColor = [UIColor blueColor];
+        }
+    }
+    
+}
+
 -(IBAction)onClick:(id)sender
 {
     UIButton *classButtons = (UIButton*)sender;
@@ -37,6 +63,7 @@ int newRate;
             pressButtonOne.enabled = FALSE;
             pressButtonTwo.enabled = TRUE;
             pressButtonThree.enabled = TRUE;
+            birdValueTextbox.text = @"The Amazon loves to talk";
             NSLog(@"You pressed button 0");
         }
         else if(classButtons.tag == 1)
@@ -44,6 +71,7 @@ int newRate;
             pressButtonTwo.enabled = FALSE;
             pressButtonOne.enabled = TRUE;
             pressButtonThree.enabled = TRUE;
+            birdValueTextbox.text = @"The Eclectus loves to make weird noises";
             NSLog(@"You pressed button 1");
         }
         else if(classButtons.tag == 2)
@@ -51,6 +79,7 @@ int newRate;
             pressButtonThree.enabled = FALSE;
             pressButtonOne.enabled = TRUE;
             pressButtonTwo.enabled = TRUE;
+            birdValueTextbox.text = @"The Green Cheek loves to squeak";
             NSLog(@"You pressed button 2");
         }
 
@@ -81,11 +110,15 @@ int newRate;
         
         if (amazon != nil)
         {
+            pressButtonOne.enabled = FALSE;
             [amazon setBirdDestructionRate:20];
             //NSString *textForAmazonLabel = [amazon birdDestruction:@"Talks"];
             //[birdValueLabel setText: textForAmazonLabel];
             newRate =  [amazon birdDestructionRate] * currentStepperValue;
-            birdValueLabel.text = [NSString stringWithFormat:@"$%i, %d", newRate, currentStepperValue];
+            birdValueTextbox.text = [NSString stringWithFormat:@"New Destruction rate: %i, and the days not held: %d", newRate, currentStepperValue];
+            pressButtonTwo.enabled = TRUE;
+            pressButtonThree.enabled = TRUE;
+            
         }
     }
     
@@ -95,11 +128,14 @@ int newRate;
     
         if (eclectus != nil)
         {
+            pressButtonTwo.enabled = FALSE;
             [eclectus setBirdDestructionRate:12];
             //NSString *textForEclectusLabel = [eclectus birdDestruction:@"Chatters"];
             //[birdValueLabel setText: textForEclectusLabel];
             newRate =  [eclectus birdDestructionRate] * currentStepperValue;
-            birdValueLabel.text = [NSString stringWithFormat:@"$%i, %d", newRate, currentStepperValue];
+            birdValueTextbox.text = [NSString stringWithFormat:@"New Destruction rate: %i, and the days not held: %d", newRate, currentStepperValue];
+            pressButtonOne.enabled = TRUE;
+            pressButtonThree.enabled = TRUE;
         }
     }
     
@@ -109,13 +145,26 @@ int newRate;
     
         if (greenCheek != nil)
         {
+            pressButtonThree.enabled = FALSE;
             [greenCheek setBirdDestructionRate:6];
             //NSString *textForGreenCheekLabel = [greenCheek birdDestruction:@"Mumbles"];
             //[birdValueLabel setText: textForGreenCheekLabel];
             newRate =  [greenCheek birdDestructionRate] * currentStepperValue;
             NSLog(@"%d", newRate);
-            birdValueLabel.text = [NSString stringWithFormat:@"$%i, %d", newRate, currentStepperValue];
+            birdValueTextbox.text = [NSString stringWithFormat:@"New Destruction rate: %i, and the days not held: %d", newRate, currentStepperValue];
+            pressButtonOne.enabled = TRUE;
+            pressButtonTwo.enabled = TRUE;
         }
+    }
+}
+
+-(IBAction)onClickChangeView:(id)sender
+{
+    SecondView *secondViewController = [[SecondView alloc] initWithNibName:@"SecondView" bundle:nil];
+    
+    if(secondViewController !=nil)
+    {
+        
     }
 }
 
