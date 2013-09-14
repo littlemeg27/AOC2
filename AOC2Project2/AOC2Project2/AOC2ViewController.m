@@ -14,87 +14,13 @@
 
 @implementation AOC2ViewController
 
+int currentStepperValue;
+int newRate;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    //Keeping all of this till I know i dont need it
-    amazonBird *amazon = (amazonBird*)[birdFactory callBirds:AMAZON];
-    
-    if (amazon != nil)
-    {
-        [amazon setBirdDestructionRate:20];
-        NSString *textForAmazonLabel = [amazon birdDestruction:@"Talks"];
-        UILabel *amazonLabelTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 5.0f, 370.0f, 80.0f)];
-        
-        if (amazonLabelTitle != nil)
-        {
-            [amazonLabelTitle setText: textForAmazonLabel];
-            [amazonLabelTitle setNumberOfLines:5];
-            amazonLabelTitle.backgroundColor = [UIColor lightGrayColor];
-            //[[self view] addSubview:amazonLabelTitle];
-        }
-        
-        UILabel *amazonLabel = [[UILabel alloc] initWithFrame:CGRectMake(380.0f, 5.0f, 370.0f, 80.0f)];
-        if (amazonLabel != nil)
-        {
-            
-            [amazonLabel setNumberOfLines:5];
-            amazonLabel.backgroundColor = [UIColor lightGrayColor];
-            //[[self view]addSubview:amazonLabel];
-        }
-    }
-    
-    eclectusBird *eclectus = (eclectusBird*)[birdFactory callBirds:ECLECTUS];
-    
-    if (eclectus != nil)
-    {
-        [eclectus setBirdDestructionRate:20];
-        NSString *textForEclectusLabel = [eclectus birdDestruction:@"Chatters"];
-        UILabel *eclectusLabelTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 90.0f, 370.0f, 80.0f)];
-        
-        if (eclectusLabelTitle != nil)
-        {
-            [eclectusLabelTitle setText: textForEclectusLabel];
-            eclectusLabelTitle.backgroundColor = [UIColor lightGrayColor];
-            [eclectusLabelTitle setNumberOfLines:5];
-            //[[self view] addSubview:eclectusLabelTitle];
-        }
-        
-        UILabel *eclectusLabel = [[UILabel alloc] initWithFrame:CGRectMake(380.0f, 90.0f, 370.0f, 80.0f)];
-        if (eclectusLabel != nil)
-        {
-            [eclectusLabel setNumberOfLines:5];
-            eclectusLabel.backgroundColor = [UIColor lightGrayColor];
-            //[[self view]addSubview:eclectusLabel];
-        }
-    }
-    
-    greenCheekBird *greenCheek = (greenCheekBird*)[birdFactory callBirds:GREENCHEEK];
-    
-    if (greenCheek != nil)
-    {
-        [greenCheek setBirdDestructionRate:20];
-        NSString *textForGreenCheekLabel = [greenCheek birdDestruction:@"Talks"];
-        UILabel *greenCheekLabelTitle = [[UILabel alloc] initWithFrame:CGRectMake(5.0f, 175.0f, 370.0f, 80.0f)];
-        
-        if (greenCheekLabelTitle != nil)
-        {
-            [greenCheekLabelTitle setText: textForGreenCheekLabel];
-            greenCheekLabelTitle.backgroundColor = [UIColor lightGrayColor];
-            [greenCheekLabelTitle setNumberOfLines:5];
-            //[[self view] addSubview:greenCheekLabelTitle];
-        }
-        
-        UILabel *greenCheekLabel = [[UILabel alloc] initWithFrame:CGRectMake(380.0f, 175.0f, 370.0f, 80.0f)];
-        if (greenCheekLabel != nil)
-        {
-            [greenCheekLabel setNumberOfLines:5];
-            greenCheekLabel.backgroundColor = [UIColor lightGrayColor];
-            //[[self view]addSubview:greenCheekLabel];
-        }
-    }
     
     [super viewDidLoad];
     
@@ -131,19 +57,67 @@
     }
 }
 
--(IBAction)onTapChange:(id)sender
+
+-(IBAction)onStepperChange:(id)sender
 {
-    UIStepper *stepperButton = (UIStepper*)sender;
+    UIStepper *stepperBtn = (UIStepper*)sender;
     
-    if(stepperButton.tag == 0)
+    if(stepperBtn.tag == 0)
     {
-        int currentStepperValue = stepperButton.value;
+        currentStepperValue = stepperBtn.value;
         NSLog(@"Stepper Value: %d", currentStepperValue);
-        stepperlabel.text = [NSString stringWithFormat:@"%@",stepperButton];
+        stepperLabel.text = [NSString stringWithFormat:@"Stepper Value - %d", currentStepperValue];
+        //stepperlabel.text = [NSString stringWithFormat:@"%@",stepperButton];
         
     }
 }
 
+-(IBAction)onClickValue:(id)sender
+{
+    
+    if(pressButtonOne.enabled == FALSE)
+    {
+        amazonBird *amazon = (amazonBird*)[birdFactory callBirds:AMAZON];
+        
+        if (amazon != nil)
+        {
+            [amazon setBirdDestructionRate:20];
+            //NSString *textForAmazonLabel = [amazon birdDestruction:@"Talks"];
+            //[birdValueLabel setText: textForAmazonLabel];
+            newRate =  [amazon birdDestructionRate] * currentStepperValue;
+            birdValueLabel.text = [NSString stringWithFormat:@"$%i, %d", newRate, currentStepperValue];
+        }
+    }
+    
+    else if(pressButtonTwo.enabled == FALSE)
+    {
+        eclectusBird *eclectus = (eclectusBird*)[birdFactory callBirds:ECLECTUS];
+    
+        if (eclectus != nil)
+        {
+            [eclectus setBirdDestructionRate:12];
+            //NSString *textForEclectusLabel = [eclectus birdDestruction:@"Chatters"];
+            //[birdValueLabel setText: textForEclectusLabel];
+            newRate =  [eclectus birdDestructionRate] * currentStepperValue;
+            birdValueLabel.text = [NSString stringWithFormat:@"$%i, %d", newRate, currentStepperValue];
+        }
+    }
+    
+    else if(pressButtonThree.enabled == FALSE)
+    {
+        greenCheekBird *greenCheek = (greenCheekBird*)[birdFactory callBirds:GREENCHEEK];
+    
+        if (greenCheek != nil)
+        {
+            [greenCheek setBirdDestructionRate:6];
+            //NSString *textForGreenCheekLabel = [greenCheek birdDestruction:@"Mumbles"];
+            //[birdValueLabel setText: textForGreenCheekLabel];
+            newRate =  [greenCheek birdDestructionRate] * currentStepperValue;
+            NSLog(@"%d", newRate);
+            birdValueLabel.text = [NSString stringWithFormat:@"$%i, %d", newRate, currentStepperValue];
+        }
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {
