@@ -24,4 +24,5 @@
 -(IBAction)onClickValue:(id)sender;
 -(IBAction)colorChanger:(id)sender;
 -(IBAction)onClickChangeView:(id)sender;
+-(IBAction)OnChangeView:(id)sender;
 @end

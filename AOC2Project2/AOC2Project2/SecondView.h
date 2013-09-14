@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondView : UIViewController
+{
+    UIButton *infoButton;
+    UILabel *infoButtonLabel;
+}
 
 @end

@@ -164,7 +164,7 @@ int newRate;
     
     if(secondViewController !=nil)
     {
-        
+        [self presentViewController:secondViewController animated:YES completion:nil];
     }
 }
 

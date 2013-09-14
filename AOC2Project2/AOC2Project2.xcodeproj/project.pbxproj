@@ -31,6 +31,7 @@
 		BA06115117E13A6A0085F5E1 /* greenCheekBird.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06115017E13A6A0085F5E1 /* greenCheekBird.m */; };
 		BABCDA4217E2A92200EA3B51 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABCDA4117E2A92200EA3B51 /* SecondView.xib */; };
 		BABCDA4517E3F80F00EA3B51 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = BABCDA4417E3F80F00EA3B51 /* SecondView.m */; };
+		BABCDA4717E40D2600EA3B51 /* 315652_10151844280301521_438874812_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BABCDA4617E40D2600EA3B51 /* 315652_10151844280301521_438874812_n.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		BABCDA4117E2A92200EA3B51 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 		BABCDA4317E3F80F00EA3B51 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
 		BABCDA4417E3F80F00EA3B51 /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
+		BABCDA4617E40D2600EA3B51 /* 315652_10151844280301521_438874812_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 315652_10151844280301521_438874812_n.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		BA06110B17E135A50085F5E1 /* AOC2Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				BABCDA4617E40D2600EA3B51 /* 315652_10151844280301521_438874812_n.jpg */,
 				BA06111417E135A50085F5E1 /* AOC2AppDelegate.h */,
 				BA06111517E135A50085F5E1 /* AOC2AppDelegate.m */,
 				BA06111D17E135A50085F5E1 /* AOC2ViewController.h */,
@@ -275,6 +278,7 @@
 				BA06112217E135A50085F5E1 /* AOC2ViewController_iPhone.xib in Resources */,
 				BA06112517E135A50085F5E1 /* AOC2ViewController_iPad.xib in Resources */,
 				BABCDA4217E2A92200EA3B51 /* SecondView.xib in Resources */,
+				BABCDA4717E40D2600EA3B51 /* 315652_10151844280301521_438874812_n.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
