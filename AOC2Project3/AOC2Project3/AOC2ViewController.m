@@ -20,6 +20,16 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(IBAction)onClickChangeView:(id)sender
+{
+    SecondView *secondViewController = [[SecondView alloc] initWithNibName:@"SecondView" bundle:nil];
+    
+    if(secondViewController !=nil)
+    {
+        [self presentViewController:secondViewController animated:YES completion:nil];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
