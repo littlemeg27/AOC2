@@ -14,11 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-<<<<<<< HEAD
-               BlueprintIdentifier = "BAC8A52A17EDE4EA005AAD69"
-=======
-               BlueprintIdentifier = "BAA285B417EA84B600E8278E"
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+               BlueprintIdentifier = "BAE3EF2B17EE48C0007C8C76"
                BuildableName = "AOC2Project3.app"
                BlueprintName = "AOC2Project3"
                ReferencedContainer = "container:AOC2Project3.xcodeproj">
@@ -36,11 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-<<<<<<< HEAD
-               BlueprintIdentifier = "BAC8A55317EDE4EA005AAD69"
-=======
-               BlueprintIdentifier = "BAA285DD17EA84B600E8278E"
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+               BlueprintIdentifier = "BAE3EF5417EE48C0007C8C76"
                BuildableName = "AOC2Project3Tests.octest"
                BlueprintName = "AOC2Project3Tests"
                ReferencedContainer = "container:AOC2Project3.xcodeproj">
@@ -50,11 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-<<<<<<< HEAD
-            BlueprintIdentifier = "BAC8A52A17EDE4EA005AAD69"
-=======
-            BlueprintIdentifier = "BAA285B417EA84B600E8278E"
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+            BlueprintIdentifier = "BAE3EF2B17EE48C0007C8C76"
             BuildableName = "AOC2Project3.app"
             BlueprintName = "AOC2Project3"
             ReferencedContainer = "container:AOC2Project3.xcodeproj">
@@ -73,11 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-<<<<<<< HEAD
-            BlueprintIdentifier = "BAC8A52A17EDE4EA005AAD69"
-=======
-            BlueprintIdentifier = "BAA285B417EA84B600E8278E"
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+            BlueprintIdentifier = "BAE3EF2B17EE48C0007C8C76"
             BuildableName = "AOC2Project3.app"
             BlueprintName = "AOC2Project3"
             ReferencedContainer = "container:AOC2Project3.xcodeproj">
@@ -95,11 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-<<<<<<< HEAD
-            BlueprintIdentifier = "BAC8A52A17EDE4EA005AAD69"
-=======
-            BlueprintIdentifier = "BAA285B417EA84B600E8278E"
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+            BlueprintIdentifier = "BAE3EF2B17EE48C0007C8C76"
             BuildableName = "AOC2Project3.app"
             BlueprintName = "AOC2Project3"
             ReferencedContainer = "container:AOC2Project3.xcodeproj">

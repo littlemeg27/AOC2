@@ -7,303 +7,158 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-		BAC8A52F17EDE4EA005AAD69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A52E17EDE4EA005AAD69 /* UIKit.framework */; };
-		BAC8A53117EDE4EA005AAD69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A53017EDE4EA005AAD69 /* Foundation.framework */; };
-		BAC8A53317EDE4EA005AAD69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A53217EDE4EA005AAD69 /* CoreGraphics.framework */; };
-		BAC8A53917EDE4EA005AAD69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A53717EDE4EA005AAD69 /* InfoPlist.strings */; };
-		BAC8A53B17EDE4EA005AAD69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A53A17EDE4EA005AAD69 /* main.m */; };
-		BAC8A53F17EDE4EA005AAD69 /* AOC2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A53E17EDE4EA005AAD69 /* AOC2AppDelegate.m */; };
-		BAC8A54117EDE4EA005AAD69 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A54017EDE4EA005AAD69 /* Default.png */; };
-		BAC8A54317EDE4EA005AAD69 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A54217EDE4EA005AAD69 /* Default@2x.png */; };
-		BAC8A54517EDE4EA005AAD69 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A54417EDE4EA005AAD69 /* Default-568h@2x.png */; };
-		BAC8A54817EDE4EA005AAD69 /* AOC2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A54717EDE4EA005AAD69 /* AOC2ViewController.m */; };
-		BAC8A54B17EDE4EA005AAD69 /* AOC2ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A54917EDE4EA005AAD69 /* AOC2ViewController_iPhone.xib */; };
-		BAC8A54E17EDE4EA005AAD69 /* AOC2ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A54C17EDE4EA005AAD69 /* AOC2ViewController_iPad.xib */; };
-		BAC8A55617EDE4EB005AAD69 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A55517EDE4EA005AAD69 /* SenTestingKit.framework */; };
-		BAC8A55717EDE4EB005AAD69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A52E17EDE4EA005AAD69 /* UIKit.framework */; };
-		BAC8A55817EDE4EB005AAD69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC8A53017EDE4EA005AAD69 /* Foundation.framework */; };
-		BAC8A56017EDE4EB005AAD69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAC8A55E17EDE4EB005AAD69 /* InfoPlist.strings */; };
-		BAC8A56317EDE4EB005AAD69 /* AOC2Project3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A56217EDE4EB005AAD69 /* AOC2Project3Tests.m */; };
+		BAE3EF3017EE48C0007C8C76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE3EF2F17EE48C0007C8C76 /* UIKit.framework */; };
+		BAE3EF3217EE48C0007C8C76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE3EF3117EE48C0007C8C76 /* Foundation.framework */; };
+		BAE3EF3417EE48C0007C8C76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE3EF3317EE48C0007C8C76 /* CoreGraphics.framework */; };
+		BAE3EF3A17EE48C0007C8C76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAE3EF3817EE48C0007C8C76 /* InfoPlist.strings */; };
+		BAE3EF3C17EE48C0007C8C76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE3EF3B17EE48C0007C8C76 /* main.m */; };
+		BAE3EF4017EE48C0007C8C76 /* AOC2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE3EF3F17EE48C0007C8C76 /* AOC2AppDelegate.m */; };
+		BAE3EF4217EE48C0007C8C76 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BAE3EF4117EE48C0007C8C76 /* Default.png */; };
+		BAE3EF4417EE48C0007C8C76 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAE3EF4317EE48C0007C8C76 /* Default@2x.png */; };
+		BAE3EF4617EE48C0007C8C76 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAE3EF4517EE48C0007C8C76 /* Default-568h@2x.png */; };
+		BAE3EF4917EE48C0007C8C76 /* AOC2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE3EF4817EE48C0007C8C76 /* AOC2ViewController.m */; };
+		BAE3EF4C17EE48C0007C8C76 /* AOC2ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAE3EF4A17EE48C0007C8C76 /* AOC2ViewController_iPhone.xib */; };
+		BAE3EF4F17EE48C0007C8C76 /* AOC2ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAE3EF4D17EE48C0007C8C76 /* AOC2ViewController_iPad.xib */; };
+		BAE3EF5717EE48C0007C8C76 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE3EF5617EE48C0007C8C76 /* SenTestingKit.framework */; };
+		BAE3EF5817EE48C0007C8C76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE3EF2F17EE48C0007C8C76 /* UIKit.framework */; };
+		BAE3EF5917EE48C0007C8C76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE3EF3117EE48C0007C8C76 /* Foundation.framework */; };
+		BAE3EF6117EE48C0007C8C76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAE3EF5F17EE48C0007C8C76 /* InfoPlist.strings */; };
+		BAE3EF6417EE48C0007C8C76 /* AOC2Project3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE3EF6317EE48C0007C8C76 /* AOC2Project3Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BAC8A55917EDE4EB005AAD69 /* PBXContainerItemProxy */ = {
+		BAE3EF5A17EE48C0007C8C76 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BAC8A52317EDE4EA005AAD69 /* Project object */;
+			containerPortal = BAE3EF2417EE48C0007C8C76 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BAC8A52A17EDE4EA005AAD69;
-=======
-		BAA285B917EA84B600E8278E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA285B817EA84B600E8278E /* UIKit.framework */; };
-		BAA285BB17EA84B600E8278E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA285BA17EA84B600E8278E /* Foundation.framework */; };
-		BAA285BD17EA84B600E8278E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA285BC17EA84B600E8278E /* CoreGraphics.framework */; };
-		BAA285C317EA84B600E8278E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAA285C117EA84B600E8278E /* InfoPlist.strings */; };
-		BAA285C517EA84B600E8278E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA285C417EA84B600E8278E /* main.m */; };
-		BAA285C917EA84B600E8278E /* AOC2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA285C817EA84B600E8278E /* AOC2AppDelegate.m */; };
-		BAA285CB17EA84B600E8278E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA285CA17EA84B600E8278E /* Default.png */; };
-		BAA285CD17EA84B600E8278E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA285CC17EA84B600E8278E /* Default@2x.png */; };
-		BAA285CF17EA84B600E8278E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA285CE17EA84B600E8278E /* Default-568h@2x.png */; };
-		BAA285D217EA84B600E8278E /* AOC2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA285D117EA84B600E8278E /* AOC2ViewController.m */; };
-		BAA285D517EA84B600E8278E /* AOC2ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA285D317EA84B600E8278E /* AOC2ViewController_iPhone.xib */; };
-		BAA285D817EA84B600E8278E /* AOC2ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA285D617EA84B600E8278E /* AOC2ViewController_iPad.xib */; };
-		BAA285E017EA84B600E8278E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA285DF17EA84B600E8278E /* SenTestingKit.framework */; };
-		BAA285E117EA84B600E8278E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA285B817EA84B600E8278E /* UIKit.framework */; };
-		BAA285E217EA84B600E8278E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA285BA17EA84B600E8278E /* Foundation.framework */; };
-		BAA285EA17EA84B600E8278E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAA285E817EA84B600E8278E /* InfoPlist.strings */; };
-		BAA285ED17EA84B600E8278E /* AOC2Project3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA285EC17EA84B600E8278E /* AOC2Project3Tests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BAA285E317EA84B600E8278E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BAA285AD17EA84B600E8278E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BAA285B417EA84B600E8278E;
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+			remoteGlobalIDString = BAE3EF2B17EE48C0007C8C76;
 			remoteInfo = AOC2Project3;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-		BAC8A52B17EDE4EA005AAD69 /* AOC2Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAC8A52E17EDE4EA005AAD69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BAC8A53017EDE4EA005AAD69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BAC8A53217EDE4EA005AAD69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BAC8A53617EDE4EA005AAD69 /* AOC2Project3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2Project3-Info.plist"; sourceTree = "<group>"; };
-		BAC8A53817EDE4EA005AAD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BAC8A53A17EDE4EA005AAD69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BAC8A53C17EDE4EA005AAD69 /* AOC2Project3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC2Project3-Prefix.pch"; sourceTree = "<group>"; };
-		BAC8A53D17EDE4EA005AAD69 /* AOC2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2AppDelegate.h; sourceTree = "<group>"; };
-		BAC8A53E17EDE4EA005AAD69 /* AOC2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2AppDelegate.m; sourceTree = "<group>"; };
-		BAC8A54017EDE4EA005AAD69 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		BAC8A54217EDE4EA005AAD69 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		BAC8A54417EDE4EA005AAD69 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BAC8A54617EDE4EA005AAD69 /* AOC2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2ViewController.h; sourceTree = "<group>"; };
-		BAC8A54717EDE4EA005AAD69 /* AOC2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2ViewController.m; sourceTree = "<group>"; };
-		BAC8A54A17EDE4EA005AAD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AOC2ViewController_iPhone.xib; sourceTree = "<group>"; };
-		BAC8A54D17EDE4EA005AAD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AOC2ViewController_iPad.xib; sourceTree = "<group>"; };
-		BAC8A55417EDE4EA005AAD69 /* AOC2Project3Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOC2Project3Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAC8A55517EDE4EA005AAD69 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		BAC8A55D17EDE4EB005AAD69 /* AOC2Project3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2Project3Tests-Info.plist"; sourceTree = "<group>"; };
-		BAC8A55F17EDE4EB005AAD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BAC8A56117EDE4EB005AAD69 /* AOC2Project3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2Project3Tests.h; sourceTree = "<group>"; };
-		BAC8A56217EDE4EB005AAD69 /* AOC2Project3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2Project3Tests.m; sourceTree = "<group>"; };
+		BAE3EF2C17EE48C0007C8C76 /* AOC2Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE3EF2F17EE48C0007C8C76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BAE3EF3117EE48C0007C8C76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BAE3EF3317EE48C0007C8C76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BAE3EF3717EE48C0007C8C76 /* AOC2Project3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2Project3-Info.plist"; sourceTree = "<group>"; };
+		BAE3EF3917EE48C0007C8C76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAE3EF3B17EE48C0007C8C76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAE3EF3D17EE48C0007C8C76 /* AOC2Project3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC2Project3-Prefix.pch"; sourceTree = "<group>"; };
+		BAE3EF3E17EE48C0007C8C76 /* AOC2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2AppDelegate.h; sourceTree = "<group>"; };
+		BAE3EF3F17EE48C0007C8C76 /* AOC2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2AppDelegate.m; sourceTree = "<group>"; };
+		BAE3EF4117EE48C0007C8C76 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BAE3EF4317EE48C0007C8C76 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BAE3EF4517EE48C0007C8C76 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BAE3EF4717EE48C0007C8C76 /* AOC2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2ViewController.h; sourceTree = "<group>"; };
+		BAE3EF4817EE48C0007C8C76 /* AOC2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2ViewController.m; sourceTree = "<group>"; };
+		BAE3EF4B17EE48C0007C8C76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AOC2ViewController_iPhone.xib; sourceTree = "<group>"; };
+		BAE3EF4E17EE48C0007C8C76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AOC2ViewController_iPad.xib; sourceTree = "<group>"; };
+		BAE3EF5517EE48C0007C8C76 /* AOC2Project3Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOC2Project3Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE3EF5617EE48C0007C8C76 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BAE3EF5E17EE48C0007C8C76 /* AOC2Project3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2Project3Tests-Info.plist"; sourceTree = "<group>"; };
+		BAE3EF6017EE48C0007C8C76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAE3EF6217EE48C0007C8C76 /* AOC2Project3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2Project3Tests.h; sourceTree = "<group>"; };
+		BAE3EF6317EE48C0007C8C76 /* AOC2Project3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2Project3Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BAC8A52817EDE4EA005AAD69 /* Frameworks */ = {
+		BAE3EF2917EE48C0007C8C76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC8A52F17EDE4EA005AAD69 /* UIKit.framework in Frameworks */,
-				BAC8A53117EDE4EA005AAD69 /* Foundation.framework in Frameworks */,
-				BAC8A53317EDE4EA005AAD69 /* CoreGraphics.framework in Frameworks */,
+				BAE3EF3017EE48C0007C8C76 /* UIKit.framework in Frameworks */,
+				BAE3EF3217EE48C0007C8C76 /* Foundation.framework in Frameworks */,
+				BAE3EF3417EE48C0007C8C76 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAC8A55017EDE4EA005AAD69 /* Frameworks */ = {
+		BAE3EF5117EE48C0007C8C76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC8A55617EDE4EB005AAD69 /* SenTestingKit.framework in Frameworks */,
-				BAC8A55717EDE4EB005AAD69 /* UIKit.framework in Frameworks */,
-				BAC8A55817EDE4EB005AAD69 /* Foundation.framework in Frameworks */,
-=======
-		BAA285B517EA84B600E8278E /* AOC2Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAA285B817EA84B600E8278E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BAA285BA17EA84B600E8278E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BAA285BC17EA84B600E8278E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BAA285C017EA84B600E8278E /* AOC2Project3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2Project3-Info.plist"; sourceTree = "<group>"; };
-		BAA285C217EA84B600E8278E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BAA285C417EA84B600E8278E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BAA285C617EA84B600E8278E /* AOC2Project3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC2Project3-Prefix.pch"; sourceTree = "<group>"; };
-		BAA285C717EA84B600E8278E /* AOC2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2AppDelegate.h; sourceTree = "<group>"; };
-		BAA285C817EA84B600E8278E /* AOC2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2AppDelegate.m; sourceTree = "<group>"; };
-		BAA285CA17EA84B600E8278E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		BAA285CC17EA84B600E8278E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		BAA285CE17EA84B600E8278E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BAA285D017EA84B600E8278E /* AOC2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2ViewController.h; sourceTree = "<group>"; };
-		BAA285D117EA84B600E8278E /* AOC2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2ViewController.m; sourceTree = "<group>"; };
-		BAA285D417EA84B600E8278E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AOC2ViewController_iPhone.xib; sourceTree = "<group>"; };
-		BAA285D717EA84B600E8278E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AOC2ViewController_iPad.xib; sourceTree = "<group>"; };
-		BAA285DE17EA84B600E8278E /* AOC2Project3Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOC2Project3Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAA285DF17EA84B600E8278E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		BAA285E717EA84B600E8278E /* AOC2Project3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2Project3Tests-Info.plist"; sourceTree = "<group>"; };
-		BAA285E917EA84B600E8278E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BAA285EB17EA84B600E8278E /* AOC2Project3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2Project3Tests.h; sourceTree = "<group>"; };
-		BAA285EC17EA84B600E8278E /* AOC2Project3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2Project3Tests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		BAA285B217EA84B600E8278E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAA285B917EA84B600E8278E /* UIKit.framework in Frameworks */,
-				BAA285BB17EA84B600E8278E /* Foundation.framework in Frameworks */,
-				BAA285BD17EA84B600E8278E /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAA285DA17EA84B600E8278E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAA285E017EA84B600E8278E /* SenTestingKit.framework in Frameworks */,
-				BAA285E117EA84B600E8278E /* UIKit.framework in Frameworks */,
-				BAA285E217EA84B600E8278E /* Foundation.framework in Frameworks */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF5717EE48C0007C8C76 /* SenTestingKit.framework in Frameworks */,
+				BAE3EF5817EE48C0007C8C76 /* UIKit.framework in Frameworks */,
+				BAE3EF5917EE48C0007C8C76 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
-		BAC8A52217EDE4EA005AAD69 = {
+		BAE3EF2317EE48C0007C8C76 = {
 			isa = PBXGroup;
 			children = (
-				BAC8A53417EDE4EA005AAD69 /* AOC2Project3 */,
-				BAC8A55B17EDE4EB005AAD69 /* AOC2Project3Tests */,
-				BAC8A52D17EDE4EA005AAD69 /* Frameworks */,
-				BAC8A52C17EDE4EA005AAD69 /* Products */,
+				BAE3EF3517EE48C0007C8C76 /* AOC2Project3 */,
+				BAE3EF5C17EE48C0007C8C76 /* AOC2Project3Tests */,
+				BAE3EF2E17EE48C0007C8C76 /* Frameworks */,
+				BAE3EF2D17EE48C0007C8C76 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BAC8A52C17EDE4EA005AAD69 /* Products */ = {
+		BAE3EF2D17EE48C0007C8C76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BAC8A52B17EDE4EA005AAD69 /* AOC2Project3.app */,
-				BAC8A55417EDE4EA005AAD69 /* AOC2Project3Tests.octest */,
-=======
-		BAA285AC17EA84B600E8278E = {
-			isa = PBXGroup;
-			children = (
-				BAA285BE17EA84B600E8278E /* AOC2Project3 */,
-				BAA285E517EA84B600E8278E /* AOC2Project3Tests */,
-				BAA285B717EA84B600E8278E /* Frameworks */,
-				BAA285B617EA84B600E8278E /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		BAA285B617EA84B600E8278E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BAA285B517EA84B600E8278E /* AOC2Project3.app */,
-				BAA285DE17EA84B600E8278E /* AOC2Project3Tests.octest */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF2C17EE48C0007C8C76 /* AOC2Project3.app */,
+				BAE3EF5517EE48C0007C8C76 /* AOC2Project3Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BAC8A52D17EDE4EA005AAD69 /* Frameworks */ = {
+		BAE3EF2E17EE48C0007C8C76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BAC8A52E17EDE4EA005AAD69 /* UIKit.framework */,
-				BAC8A53017EDE4EA005AAD69 /* Foundation.framework */,
-				BAC8A53217EDE4EA005AAD69 /* CoreGraphics.framework */,
-				BAC8A55517EDE4EA005AAD69 /* SenTestingKit.framework */,
-=======
-		BAA285B717EA84B600E8278E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BAA285B817EA84B600E8278E /* UIKit.framework */,
-				BAA285BA17EA84B600E8278E /* Foundation.framework */,
-				BAA285BC17EA84B600E8278E /* CoreGraphics.framework */,
-				BAA285DF17EA84B600E8278E /* SenTestingKit.framework */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF2F17EE48C0007C8C76 /* UIKit.framework */,
+				BAE3EF3117EE48C0007C8C76 /* Foundation.framework */,
+				BAE3EF3317EE48C0007C8C76 /* CoreGraphics.framework */,
+				BAE3EF5617EE48C0007C8C76 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BAC8A53417EDE4EA005AAD69 /* AOC2Project3 */ = {
+		BAE3EF3517EE48C0007C8C76 /* AOC2Project3 */ = {
 			isa = PBXGroup;
 			children = (
-				BAC8A53D17EDE4EA005AAD69 /* AOC2AppDelegate.h */,
-				BAC8A53E17EDE4EA005AAD69 /* AOC2AppDelegate.m */,
-				BAC8A54617EDE4EA005AAD69 /* AOC2ViewController.h */,
-				BAC8A54717EDE4EA005AAD69 /* AOC2ViewController.m */,
-				BAC8A54917EDE4EA005AAD69 /* AOC2ViewController_iPhone.xib */,
-				BAC8A54C17EDE4EA005AAD69 /* AOC2ViewController_iPad.xib */,
-				BAC8A53517EDE4EA005AAD69 /* Supporting Files */,
-=======
-		BAA285BE17EA84B600E8278E /* AOC2Project3 */ = {
-			isa = PBXGroup;
-			children = (
-				BAA285C717EA84B600E8278E /* AOC2AppDelegate.h */,
-				BAA285C817EA84B600E8278E /* AOC2AppDelegate.m */,
-				BAA285D017EA84B600E8278E /* AOC2ViewController.h */,
-				BAA285D117EA84B600E8278E /* AOC2ViewController.m */,
-				BAA285D317EA84B600E8278E /* AOC2ViewController_iPhone.xib */,
-				BAA285D617EA84B600E8278E /* AOC2ViewController_iPad.xib */,
-				BAA285BF17EA84B600E8278E /* Supporting Files */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF3E17EE48C0007C8C76 /* AOC2AppDelegate.h */,
+				BAE3EF3F17EE48C0007C8C76 /* AOC2AppDelegate.m */,
+				BAE3EF4717EE48C0007C8C76 /* AOC2ViewController.h */,
+				BAE3EF4817EE48C0007C8C76 /* AOC2ViewController.m */,
+				BAE3EF4A17EE48C0007C8C76 /* AOC2ViewController_iPhone.xib */,
+				BAE3EF4D17EE48C0007C8C76 /* AOC2ViewController_iPad.xib */,
+				BAE3EF3617EE48C0007C8C76 /* Supporting Files */,
 			);
 			path = AOC2Project3;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BAC8A53517EDE4EA005AAD69 /* Supporting Files */ = {
+		BAE3EF3617EE48C0007C8C76 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BAC8A53617EDE4EA005AAD69 /* AOC2Project3-Info.plist */,
-				BAC8A53717EDE4EA005AAD69 /* InfoPlist.strings */,
-				BAC8A53A17EDE4EA005AAD69 /* main.m */,
-				BAC8A53C17EDE4EA005AAD69 /* AOC2Project3-Prefix.pch */,
-				BAC8A54017EDE4EA005AAD69 /* Default.png */,
-				BAC8A54217EDE4EA005AAD69 /* Default@2x.png */,
-				BAC8A54417EDE4EA005AAD69 /* Default-568h@2x.png */,
-=======
-		BAA285BF17EA84B600E8278E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BAA285C017EA84B600E8278E /* AOC2Project3-Info.plist */,
-				BAA285C117EA84B600E8278E /* InfoPlist.strings */,
-				BAA285C417EA84B600E8278E /* main.m */,
-				BAA285C617EA84B600E8278E /* AOC2Project3-Prefix.pch */,
-				BAA285CA17EA84B600E8278E /* Default.png */,
-				BAA285CC17EA84B600E8278E /* Default@2x.png */,
-				BAA285CE17EA84B600E8278E /* Default-568h@2x.png */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF3717EE48C0007C8C76 /* AOC2Project3-Info.plist */,
+				BAE3EF3817EE48C0007C8C76 /* InfoPlist.strings */,
+				BAE3EF3B17EE48C0007C8C76 /* main.m */,
+				BAE3EF3D17EE48C0007C8C76 /* AOC2Project3-Prefix.pch */,
+				BAE3EF4117EE48C0007C8C76 /* Default.png */,
+				BAE3EF4317EE48C0007C8C76 /* Default@2x.png */,
+				BAE3EF4517EE48C0007C8C76 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BAC8A55B17EDE4EB005AAD69 /* AOC2Project3Tests */ = {
+		BAE3EF5C17EE48C0007C8C76 /* AOC2Project3Tests */ = {
 			isa = PBXGroup;
 			children = (
-				BAC8A56117EDE4EB005AAD69 /* AOC2Project3Tests.h */,
-				BAC8A56217EDE4EB005AAD69 /* AOC2Project3Tests.m */,
-				BAC8A55C17EDE4EB005AAD69 /* Supporting Files */,
-=======
-		BAA285E517EA84B600E8278E /* AOC2Project3Tests */ = {
-			isa = PBXGroup;
-			children = (
-				BAA285EB17EA84B600E8278E /* AOC2Project3Tests.h */,
-				BAA285EC17EA84B600E8278E /* AOC2Project3Tests.m */,
-				BAA285E617EA84B600E8278E /* Supporting Files */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF6217EE48C0007C8C76 /* AOC2Project3Tests.h */,
+				BAE3EF6317EE48C0007C8C76 /* AOC2Project3Tests.m */,
+				BAE3EF5D17EE48C0007C8C76 /* Supporting Files */,
 			);
 			path = AOC2Project3Tests;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BAC8A55C17EDE4EB005AAD69 /* Supporting Files */ = {
+		BAE3EF5D17EE48C0007C8C76 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BAC8A55D17EDE4EB005AAD69 /* AOC2Project3Tests-Info.plist */,
-				BAC8A55E17EDE4EB005AAD69 /* InfoPlist.strings */,
-=======
-		BAA285E617EA84B600E8278E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BAA285E717EA84B600E8278E /* AOC2Project3Tests-Info.plist */,
-				BAA285E817EA84B600E8278E /* InfoPlist.strings */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF5E17EE48C0007C8C76 /* AOC2Project3Tests-Info.plist */,
+				BAE3EF5F17EE48C0007C8C76 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -311,23 +166,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-<<<<<<< HEAD
-		BAC8A52A17EDE4EA005AAD69 /* AOC2Project3 */ = {
+		BAE3EF2B17EE48C0007C8C76 /* AOC2Project3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAC8A56617EDE4EB005AAD69 /* Build configuration list for PBXNativeTarget "AOC2Project3" */;
+			buildConfigurationList = BAE3EF6717EE48C0007C8C76 /* Build configuration list for PBXNativeTarget "AOC2Project3" */;
 			buildPhases = (
-				BAC8A52717EDE4EA005AAD69 /* Sources */,
-				BAC8A52817EDE4EA005AAD69 /* Frameworks */,
-				BAC8A52917EDE4EA005AAD69 /* Resources */,
-=======
-		BAA285B417EA84B600E8278E /* AOC2Project3 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BAA285F017EA84B600E8278E /* Build configuration list for PBXNativeTarget "AOC2Project3" */;
-			buildPhases = (
-				BAA285B117EA84B600E8278E /* Sources */,
-				BAA285B217EA84B600E8278E /* Frameworks */,
-				BAA285B317EA84B600E8278E /* Resources */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF2817EE48C0007C8C76 /* Sources */,
+				BAE3EF2917EE48C0007C8C76 /* Frameworks */,
+				BAE3EF2A17EE48C0007C8C76 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -335,147 +180,82 @@
 			);
 			name = AOC2Project3;
 			productName = AOC2Project3;
-<<<<<<< HEAD
-			productReference = BAC8A52B17EDE4EA005AAD69 /* AOC2Project3.app */;
+			productReference = BAE3EF2C17EE48C0007C8C76 /* AOC2Project3.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BAC8A55317EDE4EA005AAD69 /* AOC2Project3Tests */ = {
+		BAE3EF5417EE48C0007C8C76 /* AOC2Project3Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAC8A56917EDE4EB005AAD69 /* Build configuration list for PBXNativeTarget "AOC2Project3Tests" */;
+			buildConfigurationList = BAE3EF6A17EE48C0007C8C76 /* Build configuration list for PBXNativeTarget "AOC2Project3Tests" */;
 			buildPhases = (
-				BAC8A54F17EDE4EA005AAD69 /* Sources */,
-				BAC8A55017EDE4EA005AAD69 /* Frameworks */,
-				BAC8A55117EDE4EA005AAD69 /* Resources */,
-				BAC8A55217EDE4EA005AAD69 /* ShellScript */,
-=======
-			productReference = BAA285B517EA84B600E8278E /* AOC2Project3.app */;
-			productType = "com.apple.product-type.application";
-		};
-		BAA285DD17EA84B600E8278E /* AOC2Project3Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BAA285F317EA84B600E8278E /* Build configuration list for PBXNativeTarget "AOC2Project3Tests" */;
-			buildPhases = (
-				BAA285D917EA84B600E8278E /* Sources */,
-				BAA285DA17EA84B600E8278E /* Frameworks */,
-				BAA285DB17EA84B600E8278E /* Resources */,
-				BAA285DC17EA84B600E8278E /* ShellScript */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF5017EE48C0007C8C76 /* Sources */,
+				BAE3EF5117EE48C0007C8C76 /* Frameworks */,
+				BAE3EF5217EE48C0007C8C76 /* Resources */,
+				BAE3EF5317EE48C0007C8C76 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-<<<<<<< HEAD
-				BAC8A55A17EDE4EB005AAD69 /* PBXTargetDependency */,
+				BAE3EF5B17EE48C0007C8C76 /* PBXTargetDependency */,
 			);
 			name = AOC2Project3Tests;
 			productName = AOC2Project3Tests;
-			productReference = BAC8A55417EDE4EA005AAD69 /* AOC2Project3Tests.octest */;
-=======
-				BAA285E417EA84B600E8278E /* PBXTargetDependency */,
-			);
-			name = AOC2Project3Tests;
-			productName = AOC2Project3Tests;
-			productReference = BAA285DE17EA84B600E8278E /* AOC2Project3Tests.octest */;
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+			productReference = BAE3EF5517EE48C0007C8C76 /* AOC2Project3Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-<<<<<<< HEAD
-		BAC8A52317EDE4EA005AAD69 /* Project object */ = {
-=======
-		BAA285AD17EA84B600E8278E /* Project object */ = {
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+		BAE3EF2417EE48C0007C8C76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AOC2;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Brenna Pavlinchak";
 			};
-<<<<<<< HEAD
-			buildConfigurationList = BAC8A52617EDE4EA005AAD69 /* Build configuration list for PBXProject "AOC2Project3" */;
-=======
-			buildConfigurationList = BAA285B017EA84B600E8278E /* Build configuration list for PBXProject "AOC2Project3" */;
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+			buildConfigurationList = BAE3EF2717EE48C0007C8C76 /* Build configuration list for PBXProject "AOC2Project3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-<<<<<<< HEAD
-			mainGroup = BAC8A52217EDE4EA005AAD69;
-			productRefGroup = BAC8A52C17EDE4EA005AAD69 /* Products */;
+			mainGroup = BAE3EF2317EE48C0007C8C76;
+			productRefGroup = BAE3EF2D17EE48C0007C8C76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BAC8A52A17EDE4EA005AAD69 /* AOC2Project3 */,
-				BAC8A55317EDE4EA005AAD69 /* AOC2Project3Tests */,
-=======
-			mainGroup = BAA285AC17EA84B600E8278E;
-			productRefGroup = BAA285B617EA84B600E8278E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				BAA285B417EA84B600E8278E /* AOC2Project3 */,
-				BAA285DD17EA84B600E8278E /* AOC2Project3Tests */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF2B17EE48C0007C8C76 /* AOC2Project3 */,
+				BAE3EF5417EE48C0007C8C76 /* AOC2Project3Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-<<<<<<< HEAD
-		BAC8A52917EDE4EA005AAD69 /* Resources */ = {
+		BAE3EF2A17EE48C0007C8C76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC8A53917EDE4EA005AAD69 /* InfoPlist.strings in Resources */,
-				BAC8A54117EDE4EA005AAD69 /* Default.png in Resources */,
-				BAC8A54317EDE4EA005AAD69 /* Default@2x.png in Resources */,
-				BAC8A54517EDE4EA005AAD69 /* Default-568h@2x.png in Resources */,
-				BAC8A54B17EDE4EA005AAD69 /* AOC2ViewController_iPhone.xib in Resources */,
-				BAC8A54E17EDE4EA005AAD69 /* AOC2ViewController_iPad.xib in Resources */,
+				BAE3EF3A17EE48C0007C8C76 /* InfoPlist.strings in Resources */,
+				BAE3EF4217EE48C0007C8C76 /* Default.png in Resources */,
+				BAE3EF4417EE48C0007C8C76 /* Default@2x.png in Resources */,
+				BAE3EF4617EE48C0007C8C76 /* Default-568h@2x.png in Resources */,
+				BAE3EF4C17EE48C0007C8C76 /* AOC2ViewController_iPhone.xib in Resources */,
+				BAE3EF4F17EE48C0007C8C76 /* AOC2ViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAC8A55117EDE4EA005AAD69 /* Resources */ = {
+		BAE3EF5217EE48C0007C8C76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC8A56017EDE4EB005AAD69 /* InfoPlist.strings in Resources */,
-=======
-		BAA285B317EA84B600E8278E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAA285C317EA84B600E8278E /* InfoPlist.strings in Resources */,
-				BAA285CB17EA84B600E8278E /* Default.png in Resources */,
-				BAA285CD17EA84B600E8278E /* Default@2x.png in Resources */,
-				BAA285CF17EA84B600E8278E /* Default-568h@2x.png in Resources */,
-				BAA285D517EA84B600E8278E /* AOC2ViewController_iPhone.xib in Resources */,
-				BAA285D817EA84B600E8278E /* AOC2ViewController_iPad.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAA285DB17EA84B600E8278E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAA285EA17EA84B600E8278E /* InfoPlist.strings in Resources */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF6117EE48C0007C8C76 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-<<<<<<< HEAD
-		BAC8A55217EDE4EA005AAD69 /* ShellScript */ = {
-=======
-		BAA285DC17EA84B600E8278E /* ShellScript */ = {
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+		BAE3EF5317EE48C0007C8C76 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,116 +271,63 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-<<<<<<< HEAD
-		BAC8A52717EDE4EA005AAD69 /* Sources */ = {
+		BAE3EF2817EE48C0007C8C76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC8A53B17EDE4EA005AAD69 /* main.m in Sources */,
-				BAC8A53F17EDE4EA005AAD69 /* AOC2AppDelegate.m in Sources */,
-				BAC8A54817EDE4EA005AAD69 /* AOC2ViewController.m in Sources */,
+				BAE3EF3C17EE48C0007C8C76 /* main.m in Sources */,
+				BAE3EF4017EE48C0007C8C76 /* AOC2AppDelegate.m in Sources */,
+				BAE3EF4917EE48C0007C8C76 /* AOC2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAC8A54F17EDE4EA005AAD69 /* Sources */ = {
+		BAE3EF5017EE48C0007C8C76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC8A56317EDE4EB005AAD69 /* AOC2Project3Tests.m in Sources */,
-=======
-		BAA285B117EA84B600E8278E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAA285C517EA84B600E8278E /* main.m in Sources */,
-				BAA285C917EA84B600E8278E /* AOC2AppDelegate.m in Sources */,
-				BAA285D217EA84B600E8278E /* AOC2ViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAA285D917EA84B600E8278E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAA285ED17EA84B600E8278E /* AOC2Project3Tests.m in Sources */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF6417EE48C0007C8C76 /* AOC2Project3Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-<<<<<<< HEAD
-		BAC8A55A17EDE4EB005AAD69 /* PBXTargetDependency */ = {
+		BAE3EF5B17EE48C0007C8C76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BAC8A52A17EDE4EA005AAD69 /* AOC2Project3 */;
-			targetProxy = BAC8A55917EDE4EB005AAD69 /* PBXContainerItemProxy */;
-=======
-		BAA285E417EA84B600E8278E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BAA285B417EA84B600E8278E /* AOC2Project3 */;
-			targetProxy = BAA285E317EA84B600E8278E /* PBXContainerItemProxy */;
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+			target = BAE3EF2B17EE48C0007C8C76 /* AOC2Project3 */;
+			targetProxy = BAE3EF5A17EE48C0007C8C76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-<<<<<<< HEAD
-		BAC8A53717EDE4EA005AAD69 /* InfoPlist.strings */ = {
+		BAE3EF3817EE48C0007C8C76 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BAC8A53817EDE4EA005AAD69 /* en */,
-=======
-		BAA285C117EA84B600E8278E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAA285C217EA84B600E8278E /* en */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF3917EE48C0007C8C76 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BAC8A54917EDE4EA005AAD69 /* AOC2ViewController_iPhone.xib */ = {
+		BAE3EF4A17EE48C0007C8C76 /* AOC2ViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BAC8A54A17EDE4EA005AAD69 /* en */,
-=======
-		BAA285D317EA84B600E8278E /* AOC2ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAA285D417EA84B600E8278E /* en */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF4B17EE48C0007C8C76 /* en */,
 			);
 			name = AOC2ViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BAC8A54C17EDE4EA005AAD69 /* AOC2ViewController_iPad.xib */ = {
+		BAE3EF4D17EE48C0007C8C76 /* AOC2ViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BAC8A54D17EDE4EA005AAD69 /* en */,
-=======
-		BAA285D617EA84B600E8278E /* AOC2ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAA285D717EA84B600E8278E /* en */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF4E17EE48C0007C8C76 /* en */,
 			);
 			name = AOC2ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BAC8A55E17EDE4EB005AAD69 /* InfoPlist.strings */ = {
+		BAE3EF5F17EE48C0007C8C76 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BAC8A55F17EDE4EB005AAD69 /* en */,
-=======
-		BAA285E817EA84B600E8278E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAA285E917EA84B600E8278E /* en */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF6017EE48C0007C8C76 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -608,11 +335,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-<<<<<<< HEAD
-		BAC8A56417EDE4EB005AAD69 /* Debug */ = {
-=======
-		BAA285EE17EA84B600E8278E /* Debug */ = {
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+		BAE3EF6517EE48C0007C8C76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -644,11 +367,7 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-		BAC8A56517EDE4EB005AAD69 /* Release */ = {
-=======
-		BAA285EF17EA84B600E8278E /* Release */ = {
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+		BAE3EF6617EE48C0007C8C76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -674,11 +393,7 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
-		BAC8A56717EDE4EB005AAD69 /* Debug */ = {
-=======
-		BAA285F117EA84B600E8278E /* Debug */ = {
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+		BAE3EF6817EE48C0007C8C76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -689,11 +404,7 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-		BAC8A56817EDE4EB005AAD69 /* Release */ = {
-=======
-		BAA285F217EA84B600E8278E /* Release */ = {
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+		BAE3EF6917EE48C0007C8C76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -704,11 +415,7 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
-		BAC8A56A17EDE4EB005AAD69 /* Debug */ = {
-=======
-		BAA285F417EA84B600E8278E /* Debug */ = {
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+		BAE3EF6B17EE48C0007C8C76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AOC2Project3.app/AOC2Project3";
@@ -725,11 +432,7 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-		BAC8A56B17EDE4EB005AAD69 /* Release */ = {
-=======
-		BAA285F517EA84B600E8278E /* Release */ = {
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+		BAE3EF6C17EE48C0007C8C76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AOC2Project3.app/AOC2Project3";
@@ -749,60 +452,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-<<<<<<< HEAD
-		BAC8A52617EDE4EA005AAD69 /* Build configuration list for PBXProject "AOC2Project3" */ = {
+		BAE3EF2717EE48C0007C8C76 /* Build configuration list for PBXProject "AOC2Project3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BAC8A56417EDE4EB005AAD69 /* Debug */,
-				BAC8A56517EDE4EB005AAD69 /* Release */,
-=======
-		BAA285B017EA84B600E8278E /* Build configuration list for PBXProject "AOC2Project3" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BAA285EE17EA84B600E8278E /* Debug */,
-				BAA285EF17EA84B600E8278E /* Release */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF6517EE48C0007C8C76 /* Debug */,
+				BAE3EF6617EE48C0007C8C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
-		BAC8A56617EDE4EB005AAD69 /* Build configuration list for PBXNativeTarget "AOC2Project3" */ = {
+		BAE3EF6717EE48C0007C8C76 /* Build configuration list for PBXNativeTarget "AOC2Project3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BAC8A56717EDE4EB005AAD69 /* Debug */,
-				BAC8A56817EDE4EB005AAD69 /* Release */,
+				BAE3EF6817EE48C0007C8C76 /* Debug */,
+				BAE3EF6917EE48C0007C8C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		BAC8A56917EDE4EB005AAD69 /* Build configuration list for PBXNativeTarget "AOC2Project3Tests" */ = {
+		BAE3EF6A17EE48C0007C8C76 /* Build configuration list for PBXNativeTarget "AOC2Project3Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BAC8A56A17EDE4EB005AAD69 /* Debug */,
-				BAC8A56B17EDE4EB005AAD69 /* Release */,
-=======
-		BAA285F017EA84B600E8278E /* Build configuration list for PBXNativeTarget "AOC2Project3" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BAA285F117EA84B600E8278E /* Debug */,
-				BAA285F217EA84B600E8278E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		BAA285F317EA84B600E8278E /* Build configuration list for PBXNativeTarget "AOC2Project3Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BAA285F417EA84B600E8278E /* Debug */,
-				BAA285F517EA84B600E8278E /* Release */,
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+				BAE3EF6B17EE48C0007C8C76 /* Debug */,
+				BAE3EF6C17EE48C0007C8C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-<<<<<<< HEAD
-	rootObject = BAC8A52317EDE4EA005AAD69 /* Project object */;
-=======
-	rootObject = BAA285AD17EA84B600E8278E /* Project object */;
->>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
+	rootObject = BAE3EF2417EE48C0007C8C76 /* Project object */;
 }
