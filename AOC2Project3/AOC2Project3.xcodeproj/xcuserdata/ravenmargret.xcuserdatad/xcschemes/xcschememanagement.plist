@@ -12,12 +12,20 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+<<<<<<< HEAD
 		<key>BAC8A52A17EDE4EA005AAD69</key>
+=======
+		<key>BAA285B417EA84B600E8278E</key>
+>>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+<<<<<<< HEAD
 		<key>BAC8A55317EDE4EA005AAD69</key>
+=======
+		<key>BAA285DD17EA84B600E8278E</key>
+>>>>>>> 1da458dd409250bc941a38e4d4685a586c6554c6
 		<dict>
 			<key>primary</key>
 			<true/>
