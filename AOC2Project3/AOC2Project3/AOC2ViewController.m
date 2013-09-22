@@ -7,6 +7,7 @@
 //
 
 #import "AOC2ViewController.h"
+#import "SecondViewController.h"
 
 @interface AOC2ViewController ()
 
@@ -28,6 +29,12 @@
 
 -(IBAction)onClickChange:(id)sender
 {
+    SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    
+    if(secondView !=nil)
+    {
+        [self presentViewController:secondView animated:YES completion:nil];
+    }
     
 }
 
