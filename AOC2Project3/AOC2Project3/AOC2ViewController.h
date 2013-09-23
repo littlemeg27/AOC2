@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
 
-@interface AOC2ViewController : UIViewController
+@protocol EventDetail <NSObject> //Defined protocol with function
+
+@required
+-(void)eventPost:(NSString*)finishedEvent;
+
+@end
+
+@interface AOC2ViewController : UIViewController <EventDetail>
 {
 IBOutlet UITextView *createdEvents;
 IBOutlet UIButton *createEventButton;

@@ -33,6 +33,7 @@
     
     if(secondView !=nil)
     {
+        secondView.delegate = self;
         [self presentViewController:secondView animated:YES completion:nil];
     }
     

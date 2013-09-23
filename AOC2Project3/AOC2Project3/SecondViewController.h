@@ -8,17 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol EventDetail <NSObject>
 
-@required
+@protocol EventDetail <NSObject> //Defined protocol with function
 
 -(void)eventPost:(NSString*)finishedEvent;
 
 @end
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UITextFieldDelegate>
 {
-    id <EventDetail> delegate;
+    id <EventDetail> delegate; //Call back for delegate
     IBOutlet UIButton *saveEvent;
     IBOutlet UIButton *closeKeyboard;
     IBOutlet UITextField *eventName;

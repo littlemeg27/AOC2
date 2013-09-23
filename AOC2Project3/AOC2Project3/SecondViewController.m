@@ -21,6 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
+        delegate = nil;
         // Custom initialization
     }
     return self;
@@ -42,12 +43,10 @@
 
 /*-(void)keyboredWillShow:(NSNotification*)notification //To make text field smaller when keyboard comes up
 {
-    
 }
 
 -(void)keyboredWillHide:(NSNotification*)notification //To make text field same sixe when keyboard goes away
 {
-    
 }*/
 
 -(IBAction)onSave:(id)sender //Save events on the save event button
@@ -76,6 +75,7 @@
     }
     
     [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 -(IBAction)onClose:(id)sender
