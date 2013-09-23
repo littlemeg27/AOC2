@@ -8,9 +8,30 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol EventDetail <NSObject>
+
+@required
+
+-(void)eventPost:(NSString*)finishedEvent;
+
+@end
+
 @interface SecondViewController : UIViewController
+{
+    id <EventDetail> delegate;
+    IBOutlet UIButton *saveEvent;
+    IBOutlet UIButton *closeKeyboard;
+    IBOutlet UITextField *eventName;
+    IBOutlet UILabel *event;
+    IBOutlet UILabel *date;
+    IBOutlet UIDatePicker *eventDate;
+    NSString *dateFinal;
+    NSString *nameOfFullEvent;
+    
+}
 
-
+@property (strong) id <EventDetail> delegate;
+@property (nonatomic, retain)IBOutlet UIDatePicker *eventDate;
 
 -(IBAction)onSave:(id)sender;
 -(IBAction)onClose:(id)sender;

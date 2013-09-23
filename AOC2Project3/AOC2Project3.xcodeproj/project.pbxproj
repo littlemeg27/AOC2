@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BA9C9D0817EF329900516D2D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9C9D0617EF329900516D2D /* SecondViewController.m */; };
 		BA9C9D0917EF329900516D2D /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA9C9D0717EF329900516D2D /* SecondViewController.xib */; };
-		BA9C9D0C17EF811000516D2D /* GetEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9C9D0B17EF811000516D2D /* GetEvents.m */; };
 		BAE3EF3017EE48C0007C8C76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE3EF2F17EE48C0007C8C76 /* UIKit.framework */; };
 		BAE3EF3217EE48C0007C8C76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE3EF3117EE48C0007C8C76 /* Foundation.framework */; };
 		BAE3EF3417EE48C0007C8C76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE3EF3317EE48C0007C8C76 /* CoreGraphics.framework */; };
@@ -43,8 +42,6 @@
 		BA9C9D0517EF329900516D2D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		BA9C9D0617EF329900516D2D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BA9C9D0717EF329900516D2D /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
-		BA9C9D0A17EF811000516D2D /* GetEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetEvents.h; sourceTree = "<group>"; };
-		BA9C9D0B17EF811000516D2D /* GetEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetEvents.m; sourceTree = "<group>"; };
 		BAE3EF2C17EE48C0007C8C76 /* AOC2Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE3EF2F17EE48C0007C8C76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BAE3EF3117EE48C0007C8C76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -137,8 +134,6 @@
 				BA9C9D0517EF329900516D2D /* SecondViewController.h */,
 				BA9C9D0617EF329900516D2D /* SecondViewController.m */,
 				BA9C9D0717EF329900516D2D /* SecondViewController.xib */,
-				BA9C9D0A17EF811000516D2D /* GetEvents.h */,
-				BA9C9D0B17EF811000516D2D /* GetEvents.m */,
 			);
 			path = AOC2Project3;
 			sourceTree = "<group>";
@@ -293,7 +288,6 @@
 				BAE3EF4017EE48C0007C8C76 /* AOC2AppDelegate.m in Sources */,
 				BAE3EF4917EE48C0007C8C76 /* AOC2ViewController.m in Sources */,
 				BA9C9D0817EF329900516D2D /* SecondViewController.m in Sources */,
-				BA9C9D0C17EF811000516D2D /* GetEvents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

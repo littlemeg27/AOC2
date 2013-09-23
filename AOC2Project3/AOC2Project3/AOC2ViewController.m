@@ -27,7 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)onClickChange:(id)sender
+-(IBAction)onClickChange:(id)sender //Add an event & switch to events page
 {
     SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     
@@ -36,6 +36,11 @@
         [self presentViewController:secondView animated:YES completion:nil];
     }
     
+}
+
+-(void)eventPost:(NSString*)finishedEvent
+{
+    createdEvents.text = [createdEvents.text stringByAppendingString:finishedEvent];
 }
 
 @end

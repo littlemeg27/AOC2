@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface AOC2ViewController : UIViewController
+{
+IBOutlet UITextView *createdEvents;
+IBOutlet UIButton *createEventButton;
+int eventsLoaded;
+}
+
 
 -(IBAction)onClickChange:(id)sender;
 
