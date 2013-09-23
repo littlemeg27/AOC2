@@ -27,7 +27,6 @@
     IBOutlet UIDatePicker *eventDate;
     NSString *dateFinal;
     NSString *nameOfFullEvent;
-    
 }
 
 @property (strong) id <EventDetail> delegate;

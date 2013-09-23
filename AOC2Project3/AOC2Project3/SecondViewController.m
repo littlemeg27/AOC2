@@ -40,15 +40,15 @@
     
 }
 
--(void)keyboredWillShow:(NSNotification*)notification
+/*-(void)keyboredWillShow:(NSNotification*)notification //To make text field smaller when keyboard comes up
 {
     
 }
 
--(void)keyboredWillHide:(NSNotification*)notification
+-(void)keyboredWillHide:(NSNotification*)notification //To make text field same sixe when keyboard goes away
 {
     
-}
+}*/
 
 -(IBAction)onSave:(id)sender //Save events on the save event button
 {
@@ -65,17 +65,17 @@
             [setDate setDateFormat:@"MMMM dd, h:mm a"];
         }
         dateFinal = [setDate stringFromDate:chooseDate]; //Make the date into a string
-        NSLog(@"Event Date is: %@", dateFinal); //Logs out the date out to check
-        NSLog(@"The Event is: %@ on %@", textEvent, dateFinal); //Logs full event out to check
+        //NSLog(@"Event Date is: %@", dateFinal); //Logs out the date out to check
+        //NSLog(@"The Event is: %@ on %@", textEvent, dateFinal); //Logs full event out to check
     }
     
     if(delegate != nil)
     {
         nameOfFullEvent = [NSString stringWithFormat:@"%@ \n %@ \n \n", eventName.text, dateFinal];
-        [delegate saveEvent:nameOfFullEvent];
+        [delegate eventPost:nameOfFullEvent];
     }
     
-    [self dismissViewControllerAnimated:TRUE completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(IBAction)onClose:(id)sender
