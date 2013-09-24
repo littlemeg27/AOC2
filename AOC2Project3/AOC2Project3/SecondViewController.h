@@ -11,6 +11,7 @@
 
 @protocol EventDetail <NSObject> //Defined protocol with function
 
+@required
 -(void)eventPost:(NSString*)finishedEvent;
 
 @end

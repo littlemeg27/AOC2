@@ -9,14 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "SecondViewController.h"
 
-@protocol EventDetail <NSObject> //Defined protocol with function
 
-@required
--(void)eventPost:(NSString*)finishedEvent;
-
-@end
-
-@interface AOC2ViewController : UIViewController <EventDetail>
+@interface AOC2ViewController : UIViewController
 {
 IBOutlet UITextView *createdEvents;
 IBOutlet UIButton *createEventButton;
@@ -25,6 +19,7 @@ int eventsLoaded;
 
 
 -(IBAction)onClickChange:(id)sender;
+-(void)eventPost:(NSString*)finishedEvent;
 
 @end
 
