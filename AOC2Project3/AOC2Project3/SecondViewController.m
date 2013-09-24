@@ -64,8 +64,8 @@
             [setDate setDateFormat:@"MMMM dd, h:mm a"];
         }
         dateFinal = [setDate stringFromDate:chooseDate]; //Make the date into a string
-        //NSLog(@"Event Date is: %@", dateFinal); //Logs out the date out to check
-        //NSLog(@"The Event is: %@ on %@", textEvent, dateFinal); //Logs full event out to check
+        NSLog(@"Event Date is: %@", dateFinal); //Logs out the date out to check
+        NSLog(@"The Event is: %@ on %@", textEvent, dateFinal); //Logs full event out to check
     }
     
     if(delegate != nil)
@@ -74,9 +74,9 @@
         [delegate eventPost:nameOfFullEvent];
     }
     
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
+    [self dismissViewControllerAnimated:TRUE completion:nil];
 }
+
 
 -(IBAction)onClose:(id)sender
 {
