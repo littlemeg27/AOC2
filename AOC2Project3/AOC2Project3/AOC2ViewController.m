@@ -33,7 +33,7 @@
     
     if(secondView !=nil)
     {
-        secondView.delegate = self;
+        secondView.delegate = self; //Date text wont go though without this line 
         [self presentViewController:secondView animated:YES completion:nil];
     }
     
