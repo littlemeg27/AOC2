@@ -1,8 +1,8 @@
 //
 //  SecondViewController.m
-//  AOC2Project3
+//  AOC2Project4
 //
-//  Created by Brenna Pavlinchak on 9/22/13.
+//  Created by Brenna Pavlinchak on 9/25/13.
 //  Copyright (c) 2013 Brenna Pavlinchak. All rights reserved.
 //
 
@@ -34,23 +34,23 @@
     // Do any additional setup after loading the view from its nib.
     
     /*[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object: nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object: nil];*/
+     
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object: nil];*/
     
     [super viewWillAppear:animated];
     
 }
 
 /*-(void)keyboredWillShow:(NSNotification*)notification //To make text field smaller when keyboard comes up
-{
-    CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-    
-    CGRect newFrame = CGRectMake(0.0, 0.0, 320.0, <#CGFloat height#>);
-}
-
--(void)keyboredWillHide:(NSNotification*)notification //To make text field same sixe when keyboard goes away
-{
-}*/
+ {
+ CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+ 
+ CGRect newFrame = CGRectMake(0.0, 0.0, 320.0, <#CGFloat height#>);
+ }
+ 
+ -(void)keyboredWillHide:(NSNotification*)notification //To make text field same sixe when keyboard goes away
+ {
+ }*/
 
 -(IBAction)onSave:(id)sender //Save events on the save event button
 {
@@ -60,7 +60,7 @@
     NSDate *chooseDate = [eventDate date]; //Saves the date
     
     if(saveEvent != nil) //I cant find the comment on where you said how to
-    {                   //take care of these kinds of warnings. 
+    {                   //take care of these kinds of warnings.
         if(closeKeyboard.tag == 0)
         {
             [eventName resignFirstResponder]; //To close keyboard
@@ -88,7 +88,7 @@
             
             [self dismissViewControllerAnimated:TRUE completion:nil]; //Line from the textFieldShouldReturn
         } //end of if else
-         
+        
     } //End of button if
 }
 

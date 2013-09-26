@@ -1,8 +1,8 @@
 //
 //  AOC2ViewController.h
-//  AOC2Project3
+//  AOC2Project4
 //
-//  Created by Brenna Pavlinchak on 9/21/13.
+//  Created by Brenna Pavlinchak on 9/25/13.
 //  Copyright (c) 2013 Brenna Pavlinchak. All rights reserved.
 //
 
@@ -11,9 +11,9 @@
 
 @interface AOC2ViewController : UIViewController <EventDetail>
 {
-IBOutlet UITextView *createdEvents;
-IBOutlet UIButton *createEventButton;
-int eventsLoaded;
+    IBOutlet UITextView *createdEvents;
+    IBOutlet UIButton *createEventButton;
+    int eventsLoaded;
 }
 
 
@@ -21,5 +21,3 @@ int eventsLoaded;
 -(void)eventPost:(NSString*)finishedEvent;
 
 @end
-
-
