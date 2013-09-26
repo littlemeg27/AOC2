@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SecondViewController.h"
 
-@interface AOC2ViewController : UIViewController <EventDetail>
+@interface AOC2ViewController : UIViewController 
 {
     IBOutlet UITextView *createdEvents;
     IBOutlet UIButton *createEventButton;

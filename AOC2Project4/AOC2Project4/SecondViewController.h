@@ -7,18 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventPlanner.h"
 
 
-@protocol EventDetail <NSObject> //Defined protocol with function
-
-@required
--(void)eventPost:(NSString*)finishedEvent;
-
-@end
-
-@interface SecondViewController : UIViewController <UITextFieldDelegate>
+@interface SecondViewController : UIViewController
 {
-    id <EventDetail> delegate; //Call back for delegate
     IBOutlet UIButton *saveEvent;
     IBOutlet UIButton *closeKeyboard;
     IBOutlet UITextField *eventName;
@@ -29,7 +22,6 @@
     NSString *nameOfFullEvent;
 }
 
-@property (strong) id <EventDetail> delegate;
 @property (nonatomic, retain)IBOutlet UIDatePicker *eventDate;
 
 -(IBAction)onSave:(id)sender;

@@ -14,14 +14,11 @@
 
 @implementation SecondViewController
 
-@synthesize delegate, eventDate;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        delegate = nil;
         // Custom initialization
     }
     return self;
@@ -45,7 +42,7 @@
  {
  CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
  
- CGRect newFrame = CGRectMake(0.0, 0.0, 320.0, <#CGFloat height#>);
+ CGRect newFrame = CGRectMake(0.0, 0.0, 320.0,);
  }
  
  -(void)keyboredWillHide:(NSNotification*)notification //To make text field same sixe when keyboard goes away
@@ -79,12 +76,6 @@
                 NSLog(@"The Event is: %@ %@", textEvent, dateFinal); //Logs full event out to check
             }
             
-            if(delegate != nil)
-            {
-                nameOfFullEvent = [NSString stringWithFormat:@"New Event: %@ \n %@ \n \n", eventName.text, dateFinal]; //Line from textFieldShouldBeginEditing
-                NSLog(@"nameOfFullEvent: %@ on %@", textEvent, dateFinal); //Logs out final event out to check
-                [delegate eventPost:nameOfFullEvent]; //Line from textFieldShouldBeginEditing
-            }
             
             [self dismissViewControllerAnimated:TRUE completion:nil]; //Line from the textFieldShouldReturn
         } //end of if else
