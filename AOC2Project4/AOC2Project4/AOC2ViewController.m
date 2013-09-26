@@ -19,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [createEventSwipeRight addGestureRecognizer:rightSwipe];
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,20 +31,24 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)onClickChange:(id)sender //Add an event & switch to events page
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer //Took out the IBAction for change page and put it in the swipe
 {
-    SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    
-    if(secondView !=nil)
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
     {
-        [self presentViewController:secondView animated:YES completion:nil];
+        SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+        
+        if(secondView !=nil)
+        {
+            [self presentViewController:secondView animated:YES completion:nil];
+        }
+
     }
-    
 }
 
--(void)eventPost:(NSString*)finishedEvent
+/*-(void)eventPost:(NSString*)finishedEvent
 {
     createdEvents.text = [createdEvents.text stringByAppendingString:finishedEvent];
-}
+}*/
+//May not need this 
 
 @end

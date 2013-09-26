@@ -11,13 +11,17 @@
 
 @interface AOC2ViewController : UIViewController 
 {
+    //IBOutlets
     IBOutlet UITextView *createdEvents;
-    IBOutlet UIButton *createEventButton;
-    int eventsLoaded;
+    IBOutlet UILabel *createEventSwipeRight;
+    IBOutlet UIButton *saveDefaultsButton;
+    
+    //Swipe Recognizer
+    UISwipeGestureRecognizer *rightSwipe;
 }
 
 
--(IBAction)onClickChange:(id)sender;
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
 -(void)eventPost:(NSString*)finishedEvent;
 
 @end

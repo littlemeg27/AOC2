@@ -36,7 +36,7 @@ static EventPlanner *_instance = nil;
 {
     if(self = [super init])
     {
-        
+     //Add code that needs to be called at init
     }
     return self;
 }
