@@ -10,6 +10,9 @@
 #import "EventPlanner.h"
 
 @interface EventPlanner : NSObject
+{
+    
+}
 
 +(void)CreateInstance; //Static Method
 +(EventPlanner*)GetInstance; //Static Method

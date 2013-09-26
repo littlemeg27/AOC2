@@ -13,11 +13,12 @@
 {
     //IBOutlets
     IBOutlet UITextView *createdEvents;
-    IBOutlet UILabel *createEventSwipeRight;
+    IBOutlet UILabel *createEventSwipe;
     IBOutlet UIButton *saveDefaultsButton;
     
     //Swipe Recognizer
     UISwipeGestureRecognizer *rightSwipe;
+    UISwipeGestureRecognizer *leftSwipe;
 }
 
 
