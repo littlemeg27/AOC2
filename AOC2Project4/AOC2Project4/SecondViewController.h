@@ -25,7 +25,7 @@
 
 @property (nonatomic, retain)IBOutlet UIDatePicker *eventDate;
 
--(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
+-(void)onSwipeSave:(UISwipeGestureRecognizer*)recognizer;
 -(IBAction)onClose:(id)sender;
 -(void)keyboredWillShow:(NSNotification*)notification;
 -(void)keyboredWillHide:(NSNotification*)notification;

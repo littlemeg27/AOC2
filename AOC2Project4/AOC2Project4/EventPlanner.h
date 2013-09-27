@@ -11,13 +11,13 @@
 
 @interface EventPlanner : NSObject
 {
-    
+    NSString *eventList;
 }
 
 +(void)CreateInstance; //Static Method
 +(EventPlanner*)GetInstance; //Static Method
 
--(void)NSUserResults; //Instance Method
+-(void)stringCall; //Instance Method
 
 
 @end

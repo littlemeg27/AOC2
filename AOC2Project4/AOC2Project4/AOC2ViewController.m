@@ -8,6 +8,7 @@
 
 #import "AOC2ViewController.h"
 #import "SecondViewController.h"
+#import "EventPlanner.h"
 
 @interface AOC2ViewController ()
 
@@ -19,16 +20,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    EventPlanner *eventPlanner = [EventPlanner GetInstance]; //Call the singleton
+    [eventPlanner stringCall];
 
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)]; //Set up for the right swipe
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [createEventSwipe addGestureRecognizer:rightSwipe];
 
-    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)]; //Set up for the left swipe
     leftSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [createEventSwipe addGestureRecognizer:leftSwipe];
     
@@ -44,8 +48,8 @@
 
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer //Took out the IBAction for change page and put it in the swipe
 {
-    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
-    {
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight) //Have all the right code according to the video
+    {                                                                  //But swipe wont work. =(
         SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
         
         if(secondView !=nil)
@@ -55,6 +59,17 @@
 
     }
 }
+
+-(IBAction)onClickSave:(id)sender
+{
+    if(saveDefaultsButton !=nil)
+    {
+        EventPlanner *eventPlanner = [EventPlanner GetInstance]; //Call the singleton
+        [eventPlanner stringCall];
+    }
+}
+
+
 
 /*-(void)eventPost:(NSString*)finishedEvent
 {
