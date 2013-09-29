@@ -16,6 +16,7 @@
     IBOutlet UIDatePicker *eventDate;
     NSString *dateFinal;
     NSString *nameOfFullEvent;
+    IBOutlet UITextView *createdEvents;
 }
 
 +(void)CreateInstance; //Static Method

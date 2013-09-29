@@ -82,19 +82,23 @@ static EventPlanner *_instance = nil;
 
 -(void)getEvents
 {
-    if()
+    NSUserDefaults *defaultText = [NSUserDefaults standardUserDefaults];
+    
+    if(defaultText <= 0)
     {
-        
+        //This is to call the created event to put on the screen.
+        //createdEvents.text = [createdEvents.text stringByAppendingString:finishedEvent];
     }
     
-    else if(createdEvents == 0)
+    else if(defaultText != nil)
     {
-        NSUserDefaults *defaultText = [NSUserDefaults standardUserDefaults];
+        
         
         if(defaultText !=nil)
         {
-            NSString *defaultName = ;
-            NSString *defaultDate = ;
+            NSString *defaultText  = UITextField.text;
+            NSString *defaultDate  = UITextField.text;
+            
         }
     }
 }
