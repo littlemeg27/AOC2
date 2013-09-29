@@ -88,7 +88,6 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">Swipe Right to Add Event</string>
 						<object class="NSColor" key="IBUITextColor">
@@ -672,17 +671,6 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">AOC2ViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">onClickSave:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">onClickSave:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">onClickSave:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="createEventSwipe">UILabel</string>
 						<string key="createdEvents">UITextView</string>

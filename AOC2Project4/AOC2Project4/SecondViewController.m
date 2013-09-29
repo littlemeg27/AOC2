@@ -36,7 +36,7 @@
     [saveEventSwipe addGestureRecognizer:rightSwipe];
     
     leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipeSave:)];
-    leftSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+    leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
     [saveEventSwipe addGestureRecognizer:leftSwipe];
     
     [super viewWillAppear:animated];
