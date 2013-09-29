@@ -12,12 +12,18 @@
 @interface EventPlanner : NSObject
 {
     NSString *eventList;
+    IBOutlet UITextField *eventName;
+    IBOutlet UIDatePicker *eventDate;
+    NSString *dateFinal;
+    NSString *nameOfFullEvent;
 }
 
 +(void)CreateInstance; //Static Method
 +(EventPlanner*)GetInstance; //Static Method
 
 -(void)stringCall; //Instance Method
+-(void)addEvent; //Instance Method
+-(void)getEvents; //Instance Method
 
 
 @end

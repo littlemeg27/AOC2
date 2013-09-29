@@ -54,5 +54,39 @@ static EventPlanner *_instance = nil;
     return bothStrings;*/
 }
 
+-(void)addEvent
+{
+        NSString *textEvent = eventName.text; //Save the text into a string
+        NSLog(@"The Event: %@", textEvent); //Log it out
+        
+        NSDate *chooseDate = [eventDate date]; //Saves the date
+        
+        if(chooseDate != nil)
+        {
+            NSDateFormatter *setDate = [[NSDateFormatter alloc]init];
+            
+            if(setDate != nil)
+            {
+                eventDate.minimumDate = [NSDate date];
+                [setDate setDateFormat:@"MMMM dd, h:mm a"];
+            }
+            
+            dateFinal = [setDate stringFromDate:chooseDate]; //Make the date into a string
+            NSLog(@"Event Date is: %@", dateFinal); //Logs out the date out to check
+            NSLog(@"The Event is: %@ %@", textEvent, dateFinal); //Logs full event out to check
+        }
+            nameOfFullEvent = [NSString stringWithFormat:@"New Event: %@ \n %@ \n \n", eventName.text, dateFinal]; //Line from textFieldShouldBeginEditing
+            NSLog(@"nameOfFullEvent: %@ on %@", textEvent, dateFinal); //Logs out final event out to check
+
+}
+
+-(void)getEvents
+{
+    
+}
+
+
+
+
 
 @end

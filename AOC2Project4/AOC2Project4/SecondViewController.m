@@ -27,10 +27,10 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     
-   /*[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object: nil];
+    /*[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object: nil];
      
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object: nil];*/
-
+    
     rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipeSave:)];
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [saveEventSwipe addGestureRecognizer:rightSwipe];
@@ -48,30 +48,13 @@
     {
         if(eventName.text.length !=0)
         {
-            NSString *textEvent = eventName.text; //Save the text into a string
-            NSLog(@"The Event: %@", textEvent); //Log it out
-            
-            NSDate *chooseDate = [eventDate date]; //Saves the date
-            
+            EventPlanner *eventPlanner = [EventPlanner GetInstance]; //Call the singleton
+            [eventPlanner addEvent];
+
             if(closeKeyboard.tag == 0)
             {
                 [eventName resignFirstResponder]; //To close keyboard
             } //end of if for close keyboard
-            
-            if(chooseDate != nil)
-            {
-                NSDateFormatter *setDate = [[NSDateFormatter alloc]init];
-                
-                if(setDate != nil)
-                {
-                    [setDate setDateFormat:@"MMMM dd, h:mm a"];
-                }
-                
-                dateFinal = [setDate stringFromDate:chooseDate]; //Make the date into a string
-                NSLog(@"Event Date is: %@", dateFinal); //Logs out the date out to check
-                NSLog(@"The Event is: %@ %@", textEvent, dateFinal); //Logs full event out to check
-            }
-            
             
             [self dismissViewControllerAnimated:TRUE completion:nil]; //Line from the textFieldShouldReturn
             
