@@ -82,7 +82,21 @@ static EventPlanner *_instance = nil;
 
 -(void)getEvents
 {
+    if()
+    {
+        
+    }
     
+    else if(createdEvents == 0)
+    {
+        NSUserDefaults *defaultText = [NSUserDefaults standardUserDefaults];
+        
+        if(defaultText !=nil)
+        {
+            NSString *defaultName = ;
+            NSString *defaultDate = ;
+        }
+    }
 }
 
 

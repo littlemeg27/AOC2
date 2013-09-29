@@ -48,8 +48,8 @@
 
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer //Took out the IBAction for change page and put it in the swipe
 {
-    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight) //Have all the right code according to the video
-    {                                                                  //But swipe wont work. =(
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    {                                                                  
         SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
         
         if(secondView !=nil)
@@ -64,8 +64,7 @@
 {
     if(saveDefaultsButton !=nil)
     {
-        EventPlanner *eventPlanner = [EventPlanner GetInstance]; //Call the singleton
-        [eventPlanner stringCall];
+        
     }
 }
 
