@@ -13,11 +13,12 @@
 @interface SecondViewController : UIViewController
 {
     IBOutlet UILabel *saveEventSwipe;
-    IBOutlet UIButton *closeKeyboard;
     IBOutlet UITextField *eventName;
     IBOutlet UIDatePicker *eventDate;
     NSString *dateFinal;
     NSString *nameOfFullEvent;
+    NSString *newEvent;
+    NSDate *todaysDate;
     
     UISwipeGestureRecognizer *rightSwipe;
     UISwipeGestureRecognizer *leftSwipe;
@@ -26,8 +27,6 @@
 @property (nonatomic, retain)IBOutlet UIDatePicker *eventDate;
 
 -(void)onSwipeSave:(UISwipeGestureRecognizer*)recognizer;
--(IBAction)onClose:(id)sender;
--(void)keyboredWillShow:(NSNotification*)notification;
--(void)keyboredWillHide:(NSNotification*)notification;
+- (IBAction)onClick:(id)sender;
 
 @end

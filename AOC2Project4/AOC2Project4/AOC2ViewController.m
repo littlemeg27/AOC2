@@ -20,10 +20,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    EventPlanner *eventPlanner = [EventPlanner GetInstance]; //Call the singleton
-    [eventPlanner stringCall];
-
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -32,10 +28,6 @@
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [createEventSwipe addGestureRecognizer:rightSwipe];
 
-    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)]; //Set up for the left swipe
-    leftSwipe.direction = UISwipeGestureRecognizerDirectionRight;
-    [createEventSwipe addGestureRecognizer:leftSwipe];
-    
     [super viewWillAppear:animated];
 }
 
@@ -67,13 +59,4 @@
         
     }
 }
-
-
-
-/*-(void)eventPost:(NSString*)finishedEvent
-{
-    createdEvents.text = [createdEvents.text stringByAppendingString:finishedEvent];
-}*/
-//May not need this 
-
 @end

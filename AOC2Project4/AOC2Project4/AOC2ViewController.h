@@ -22,8 +22,6 @@
     UISwipeGestureRecognizer *leftSwipe;
 }
 
-
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
--(void)eventPost:(NSString*)finishedEvent;
 
 @end

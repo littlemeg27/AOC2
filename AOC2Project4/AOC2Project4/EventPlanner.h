@@ -17,14 +17,14 @@
     NSString *dateFinal;
     NSString *nameOfFullEvent;
     IBOutlet UITextView *createdEvents;
+    NSMutableString *events;
 }
 
 +(void)CreateInstance; //Static Method
 +(EventPlanner*)GetInstance; //Static Method
 
--(void)stringCall; //Instance Method
--(void)addEvent; //Instance Method
--(void)getEvents; //Instance Method
+-(void)addEvent:(NSString*)tempEvent; //Instance Method
+-(NSMutableString*)getEvents; //Instance Method
 
 
 @end

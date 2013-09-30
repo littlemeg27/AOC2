@@ -10,13 +10,14 @@
 
 @implementation EventPlanner
 
+
 static EventPlanner *_instance = nil;
 
 +(void)CreateInstance
 {
     if(_instance == nil)
     {
-        [[self alloc] init];
+        _instance = [[self alloc] init];
     }
 }
 
@@ -40,71 +41,25 @@ static EventPlanner *_instance = nil;
         if(!eventList)
         {
             eventList = [[NSMutableString alloc] init];
+            events = [[NSMutableString alloc] initWithString:@""];
         }
     }
     return self;
 }
 
--(void)stringCall
-{
-    //NSDateFormatter *eventDate = [[NSDateFormatter alloc] init];
-    
-    /*NSMutableString *string = [[NSMutableString alloc] initWithString:stringOne];
-    NSString *bothStrings = [string stringByAppendingString:stringTwo];
-    return bothStrings;*/
-}
 
--(void)addEvent
+-(void)addEvent:(NSString*)tempEvent
 {
-        NSString *textEvent = eventName.text; //Save the text into a string
-        NSLog(@"The Event: %@", textEvent); //Log it out
-        
-        NSDate *chooseDate = [eventDate date]; //Saves the date
-        
-        if(chooseDate != nil)
-        {
-            NSDateFormatter *setDate = [[NSDateFormatter alloc]init];
-            
-            if(setDate != nil)
-            {
-                eventDate.minimumDate = [NSDate date];
-                [setDate setDateFormat:@"MMMM dd, h:mm a"];
-            }
-            
-            dateFinal = [setDate stringFromDate:chooseDate]; //Make the date into a string
-            NSLog(@"Event Date is: %@", dateFinal); //Logs out the date out to check
-            NSLog(@"The Event is: %@ %@", textEvent, dateFinal); //Logs full event out to check
-        }
-            nameOfFullEvent = [NSString stringWithFormat:@"New Event: %@ \n %@ \n \n", eventName.text, dateFinal]; //Line from textFieldShouldBeginEditing
-            NSLog(@"nameOfFullEvent: %@ on %@", textEvent, dateFinal); //Logs out final event out to check
-
-}
-
--(void)getEvents
-{
-    NSUserDefaults *defaultText = [NSUserDefaults standardUserDefaults];
-    
-    if(defaultText <= 0)
+    if (tempEvent != nil)
     {
-        //This is to call the created event to put on the screen.
-        //createdEvents.text = [createdEvents.text stringByAppendingString:finishedEvent];
-    }
-    
-    else if(defaultText != nil)
-    {
-        NSString *defaultName  = UITextField.text;
-        NSString *defaultDate  = UITextField.text;
-            
-        [defaultText setObject:defaultName forKey:@"Name"];
-        [defaultText setObject:defaultDate forKey:@"Date"];
-            
-        [defaultText synchronize];
-
+        [events appendString:tempEvent];
     }
 }
 
 
-
-
+- (NSMutableString*)getEvents
+{
+    return events;
+}
 
 @end

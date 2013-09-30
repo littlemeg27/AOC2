@@ -13,6 +13,7 @@
 @end
 
 @implementation SecondViewController
+@synthesize eventDate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,15 +27,6 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    
-    /*[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object: nil];
-     
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object: nil];*/
-    
-    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipeSave:)];
-    rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
-    [saveEventSwipe addGestureRecognizer:rightSwipe];
-    
     leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipeSave:)];
     leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
     [saveEventSwipe addGestureRecognizer:leftSwipe];
@@ -48,13 +40,10 @@
     {
         if(eventName.text.length !=0)
         {
-            EventPlanner *eventPlanner = [EventPlanner GetInstance]; //Call the singleton
-            [eventPlanner addEvent];
+            // Right here, make sure you get the name of the event and the date, and format it how it needs to
+            // be displayed. It should be put in the newEvent variable
+            [[EventPlanner GetInstance] addEvent:newEvent]; //Call the singleton
 
-            if(closeKeyboard.tag == 0)
-            {
-                [eventName resignFirstResponder]; //To close keyboard
-            } //end of if for close keyboard
             
             [self dismissViewControllerAnimated:TRUE completion:nil]; //Line from the textFieldShouldReturn
             
@@ -63,25 +52,17 @@
         else //If the text field is empty display an alert saying to enter text
         {
             NSString *eventNameAlert = [NSString stringWithFormat:@"You cannot save this event without a name!"];
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:eventNameAlert delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            if (alert != nil) {
+                [alert show];
+            }
             //[self displayAlertWithString:eventNameAlert];
         }
-        
     } //End of button if for swipe
     
 } //End of onSwipe
-
-
-
-/*-(void)keyboredWillShow:(NSNotification*)notification //To make text field smaller when keyboard comes up
- {
- CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
- 
- CGRect newFrame = CGRectMake(0.0, 0.0, 320.0,);
- }
- 
- -(void)keyboredWillHide:(NSNotification*)notification //To make text field same sixe when keyboard goes away
- {
- }*/
 
 
 - (void)viewDidLoad
@@ -94,5 +75,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)onClick:(id)sender {
+    [eventName resignFirstResponder];
+}
+
 
 @end

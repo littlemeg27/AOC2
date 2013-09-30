@@ -9,6 +9,7 @@
 #import "AOC2AppDelegate.h"
 
 #import "AOC2ViewController.h"
+#import "SecondViewController.h"
 
 @implementation AOC2AppDelegate
 
