@@ -92,14 +92,14 @@ static EventPlanner *_instance = nil;
     
     else if(defaultText != nil)
     {
-        
-        
-        if(defaultText !=nil)
-        {
-            NSString *defaultText  = UITextField.text;
-            NSString *defaultDate  = UITextField.text;
+        NSString *defaultName  = UITextField.text;
+        NSString *defaultDate  = UITextField.text;
             
-        }
+        [defaultText setObject:defaultName forKey:@"Name"];
+        [defaultText setObject:defaultDate forKey:@"Date"];
+            
+        [defaultText synchronize];
+
     }
 }
 
